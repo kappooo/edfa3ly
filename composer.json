@@ -1,0 +1,19 @@
+{
+    "name": "edfa3ly/challenge",
+    "type": "package",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Ahmed Mostafa",
+            "email": "ahmed.mostafaa.k@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "edfa3ly\\Challenge\\": "src/"
+        }
+    }
+}
