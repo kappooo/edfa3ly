@@ -10,4 +10,6 @@ class Shoes extends Product
     protected $priceInUsd = 24.99;
 
     protected $discountPercentage = 10;
+
+    protected $name = 'shoes';
 }

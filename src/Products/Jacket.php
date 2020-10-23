@@ -2,7 +2,9 @@
 
 namespace edfa3ly\Challenge\Products;
 
-class Jaket extends Product
+class Jacket extends Product
 {
     protected $priceInUsd = 19.99;
+
+    protected $name = 'jaket';
 }

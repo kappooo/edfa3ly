@@ -2,14 +2,14 @@
 
 namespace edfa3ly\Challenge;
 
-use edfa3ly\Challenge\Products\{TShirt, Pants, Jaket, Shoes};
+use edfa3ly\Challenge\Products\{TShirt, Pants, Jacket, Shoes};
 
 class Mapper
 {
     const PRODUCTS_LIST = [
         'T-shirt' => TShirt::class,
         'Shoes' => Shoes::class,
-        'Jacket' => Jaket::class,
+        'Jacket' => Jacket::class,
         'Pants' => Pants::class,
     ];
 

@@ -1,23 +1,13 @@
 <?php
 require_once __DIR__.'/vendor/autoload.php';
 
-use edfa3ly\Challenge\Products\Shoes;
-use edfa3ly\Challenge\Mapper;
+use edfa3ly\Challenge\CartHandler;
 
 $data = [
     'T-shirt',
-    'T-shirt',
-    'Shoes',
-    'Jacket'
+    'Pants'
 ];
 
+print_r((new \edfa3ly\Challenge\CurrencyHandler(new CartHandler($data), new \edfa3ly\Challenge\Currency\EGP()))->getFormattedTextPerCurrency());
 
-$products = Mapper::mapProducts($data);
-foreach ($products as $key => $product) {
-    if ($key == 3) {
-        $product->setDiscountPercentageValue(50);
-    }
-    var_dump($product->getDiscountValue());
-}
-var_dump($products);
 

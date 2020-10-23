@@ -7,5 +7,7 @@ class Pants extends Product
     /**
      * @var float $priceInUsd
      */
-    protected $priceInUsd = 24.99;
+    protected $priceInUsd = 14.99;
+
+    protected $name = 'pants';
 }
