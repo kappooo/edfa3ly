@@ -12,16 +12,17 @@ class CartHandler implements IHandler
 {
     private $products  = [];
 
-    public function __construct(array $products)
+    private $taxes = [];
+
+    public function __construct(array $products, $taxes = [])
     {
         $this->products = $products;
+        $this->taxes = $taxes;
     }
 
     public function handel() : CartReturn
     {
         $products = Mapper::mapProducts($this->products);
-        $taxes = [new VatTax()];
-
         $allTaxesValues = 0;
         $allDiscountValues = 0;
         $subTotalPrice = 0;
@@ -37,7 +38,7 @@ class CartHandler implements IHandler
                 $itemDiscounts[] = new DiscountItem($product->getDiscountPercentageValue(), $product->getName(), $discountPerItem);
             }
 
-            foreach ($taxes as $tax) {
+            foreach ($this->taxes as $tax) {
                 $allTaxesValues+= $product->getTaxValue($tax);
             }
             $subTotalPrice+= $product->getPriceInUsd();

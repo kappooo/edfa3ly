@@ -34,36 +34,7 @@ abstract class Currency implements ICurrency
         return $this->currencyExchangeRateFromUsd;
     }
 
-    /**
-     * @param CartReturn $cartReturn
-     * @return string
-     */
-    public function getFormattedCurrency(CartReturn $cartReturn): string
-    {
-        $discountString = $this->getDiscountString($cartReturn->discountItems);
-        return  sprintf(
-            'Subtotal: %s <br/> Taxes: %s <br/> %s Total: %s',
-            $this->formatCurrency($cartReturn->subTotalPrice),
-            $this->formatCurrency($cartReturn->totalTaxes),
-            $discountString,
-            $this->formatCurrency(($cartReturn->subTotalPrice - $cartReturn->totalDiscount + $cartReturn->totalTaxes))
-        );
-    }
 
-    private function getDiscountString(array $discountItems)
-    {
-        $sentence = '';
-        $spaces = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        foreach ($discountItems as $item) {
-            $sentence.= sprintf($spaces."%d%% off %s: -%s<br/>",
-                $item->discountPercentage, $item->itemName, $this->formatCurrency($item->discountValue)
-            );
-        }
-        if (count($discountItems)) {
-            $sentence = 'Discounts: <br/>'.$sentence;
-        }
-        return $sentence;
-    }
 
     public function convertPrices(CartReturn $cartReturn): CartReturn
     {

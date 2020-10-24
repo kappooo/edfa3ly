@@ -21,12 +21,6 @@ interface ICurrency
 
 
     /**
-     * @param CartReturn $cartReturn
-     * @return string
-     */
-    public function getFormattedCurrency(CartReturn $cartReturn): string;
-
-    /**
      * @param float $number
      * @return string
      */

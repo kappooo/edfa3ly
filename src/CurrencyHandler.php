@@ -4,7 +4,10 @@
 namespace edfa3ly\Challenge;
 
 
+use edfa3ly\Challenge\Currency\Currency;
 use edfa3ly\Challenge\Currency\ICurrency;
+use edfa3ly\Challenge\Output\HtmlOutput;
+use edfa3ly\Challenge\Prototype\CartReturn;
 
 class CurrencyHandler
 {
@@ -26,11 +29,20 @@ class CurrencyHandler
         $this->currency = $currency;
     }
 
-    public function getFormattedTextPerCurrency() : string
+    /**
+     * @return CartReturn
+     */
+    public function convertCurrencyExchange() : CartReturn
     {
-        $currencyHandel = $this->currency->convertPrices($this->handler->handel());
+        return $this->currency->convertPrices($this->handler->handel());
+    }
 
-        return $this->currency->getFormattedCurrency($currencyHandel);
+    /**
+     * @return Currency
+     */
+    public function getCurrency() : Currency
+    {
+        return $this->currency;
     }
 
 }
