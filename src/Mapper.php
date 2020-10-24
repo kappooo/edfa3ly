@@ -20,4 +20,10 @@ class Mapper
             return (new $class());
         }, $data);
     }
+
+    public static function getClassOfProduct($product_name)
+    {
+        $class = static::PRODUCTS_LIST[$product_name];
+        return new $class();
+    }
 }
