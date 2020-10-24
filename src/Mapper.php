@@ -16,7 +16,7 @@ class Mapper
     public static function mapProducts(array $data): array
     {
         return array_map(function ($item) {
-            $class = static::PRODUCTS_LIST[$item];
+            $class = static::PRODUCTS_LIST[ucwords($item)];
             return (new $class());
         }, $data);
     }

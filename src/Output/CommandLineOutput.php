@@ -8,7 +8,7 @@ use edfa3ly\Challenge\Currency\Currency;
 use edfa3ly\Challenge\CurrencyHandler;
 use edfa3ly\Challenge\Prototype\CartReturn;
 
-class HtmlOutput implements IOutput
+class CommandLineOutput implements IOutput
 {
 
     private $currencyHandler;
@@ -29,7 +29,7 @@ class HtmlOutput implements IOutput
         $currency = $this->currencyHandler->getCurrency();
         $discountString = $this->getDiscountString($cartReturn->discountItems, $currency);
         return  sprintf(
-            'Subtotal: %s <br/> Taxes: %s <br/> %s Total: %s',
+            "Subtotal: %s \r\nTaxes: %s \r\n%sTotal: %s",
             $currency->formatCurrency($cartReturn->subTotalPrice),
             $currency->formatCurrency($cartReturn->totalTaxes),
             $discountString,
@@ -45,15 +45,15 @@ class HtmlOutput implements IOutput
      */
     private function getDiscountString(array $discountItems, Currency $currency) : string
     {
-        $sentence = '';
-        $spaces = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        $sentence = "";
+        $spaces = "\t";
         foreach ($discountItems as $item) {
-            $sentence.= sprintf($spaces."%d%% off %s: -%s<br/>",
+            $sentence.= sprintf($spaces."%d%% off %s: -%s\r\n",
                 $item->discountPercentage, $item->itemName, $currency->formatCurrency($item->discountValue)
             );
         }
         if (count($discountItems)) {
-            $sentence = 'Discounts: <br/>'.$sentence;
+            $sentence = "Discounts: \r\n".$sentence;
         }
         return $sentence;
     }
