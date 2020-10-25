@@ -2,7 +2,7 @@
 
 namespace edfa3ly\Challenge;
 
-use edfa3ly\Challenge\Products\{TShirt, Pants, Jacket, Shoes};
+use edfa3ly\Challenge\Products\{Product, TShirt, Pants, Jacket, Shoes};
 
 class Mapper
 {
@@ -13,6 +13,10 @@ class Mapper
         'Pants' => Pants::class,
     ];
 
+    /**
+     * @param array<string> $data
+     * @return array<Product>
+     */
     public static function mapProducts(array $data): array
     {
         return array_map(function ($item) {
@@ -21,7 +25,11 @@ class Mapper
         }, $data);
     }
 
-    public static function getClassOfProduct($product_name)
+    /**
+     * @param string $product_name
+     * @return Product
+     */
+    public static function getClassOfProduct(string $product_name) : Product
     {
         $class = static::PRODUCTS_LIST[$product_name];
         return new $class();

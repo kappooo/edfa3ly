@@ -1,9 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
 namespace edfa3ly\Challenge\Currency;
-
 
 use edfa3ly\Challenge\Prototype\CartReturn;
 
@@ -36,12 +33,15 @@ abstract class Currency implements ICurrency
     }
 
 
-
+    /**
+     * @param CartReturn $cartReturn
+     * @return CartReturn
+     */
     public function convertPrices(CartReturn $cartReturn): CartReturn
     {
-        $cartReturn->totalTaxes = $cartReturn->totalTaxes * $this->getCurrencyExchangeRate();
-        $cartReturn->totalDiscount = $cartReturn->totalDiscount * $this->getCurrencyExchangeRate();
-        $cartReturn->subTotalPrice  = $cartReturn->subTotalPrice * $this->getCurrencyExchangeRate();
+        $cartReturn->setTotalTaxes($cartReturn->getTotalTaxes() * $this->getCurrencyExchangeRate());
+        $cartReturn->setTotalDiscount($cartReturn->getTotalDiscount() * $this->getCurrencyExchangeRate());
+        $cartReturn->setSubTotalPrice($cartReturn->getSubTotalPrice() * $this->getCurrencyExchangeRate());
         return $cartReturn;
     }
 }

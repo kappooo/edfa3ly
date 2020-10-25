@@ -12,19 +12,19 @@ class Action
     /**
      * @var string $applyOn
      */
-    private $applyOn;
+    private string $applyOn;
 
 
     /**
      * @var string $type
      */
-    private $type;
+    private string $type;
 
 
     /**
      * @var float $value
      */
-    private $value;
+    private float $value;
 
 
     /**
@@ -41,16 +41,26 @@ class Action
     }
 
     /**
-     * @param $name
-     * @return mixed
-     * @throws NotFoundPropertyException
+     * @return string
      */
-    public function __get($name)
+    public function getApplyOn() : string
     {
-        if (property_exists($this, $name)) {
-            return $this->$name;
-        }
-        throw new NotFoundPropertyException();
+        return $this->applyOn;
     }
 
+    /**
+     * @return string
+     */
+    public function getType() : string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @return float
+     */
+    public function getValue() : float
+    {
+        return $this->value;
+    }
 }

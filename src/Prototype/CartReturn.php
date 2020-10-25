@@ -1,26 +1,35 @@
 <?php
 
-
 namespace edfa3ly\Challenge\Prototype;
-
-use edfa3ly\Challenge\Exceptions\NotFoundPropertyException;
 
 class CartReturn
 {
-    private $totalTaxes;
+    /**
+     * @var float $totalTaxes
+     */
+    private float $totalTaxes;
 
-    private $totalDiscount;
+    /**
+     * @var float $totalDiscount
+     */
+    private float $totalDiscount;
 
-    private $subTotalPrice;
+    /**
+     * @var float $subTotalPrice
+     */
+    private float $subTotalPrice;
 
-    private $discountItems;
+    /**
+     * @var array<DiscountItem> $discountItems
+     */
+    private array $discountItems;
 
 
     /**
      * CartReturn constructor.
      * @param float $totalTaxes
      * @param float $totalDiscount
-     * @param array $discountItems
+     * @param array<DiscountItem> $discountItems
      * @param float $subTotalPrice
      */
     public function __construct(float $totalTaxes, float $totalDiscount, array $discountItems, float $subTotalPrice)
@@ -32,30 +41,69 @@ class CartReturn
     }
 
     /**
-     * @param $name
-     * @param $value
-     * @throws NotFoundPropertyException
+     * @return float
      */
-    public function __set($name, $value)
+    public function getTotalTaxes() : float
     {
-        if (property_exists($this, $name)) {
-            $this->$name = $value;
-        } else {
-            throw new NotFoundPropertyException();
-        }
+        return $this->totalTaxes;
     }
 
     /**
-     * @param $name
-     * @return mixed
-     * @throws NotFoundPropertyException
+     * @return float
      */
-    public function __get($name)
+    public function getTotalDiscount() : float
     {
-        if (property_exists($this, $name)) {
-            return $this->$name;
-        }
-        throw new NotFoundPropertyException();
+        return $this->totalTaxes;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSubTotalPrice() : float
+    {
+        return $this->subTotalPrice;
+    }
+
+
+    /**
+     * @return array<DiscountItem>
+     */
+    public function getDiscountItems() : array
+    {
+        return $this->discountItems;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotalPrice() : float
+    {
+        return ($this->getSubTotalPrice() - ($this->getTotalTaxes() - $this->getTotalDiscount()));
+    }
+
+
+    /**
+     * @param float $value
+     */
+    public function setTotalTaxes(float  $value) : void
+    {
+        $this->totalTaxes = $value;
+    }
+
+    /**
+     * @param float $value
+     */
+    public function setTotalDiscount(float  $value) : void
+    {
+        $this->totalDiscount = $value;
+    }
+
+    /**
+     * @param float $value
+     */
+    public function setSubtotalPrice(float  $value) : void
+    {
+        $this->subTotalPrice = $value;
     }
 
 }

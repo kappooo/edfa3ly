@@ -34,7 +34,7 @@ class Product
     /**
      * @param float $discountValue
      */
-    public function setDiscountPercentageValue(float $discountValue)
+    public function setDiscountPercentageValue(float $discountValue) : void
     {
         $this->discountPercentage = $discountValue;
     }

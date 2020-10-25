@@ -2,33 +2,36 @@
 
 namespace edfa3ly\Challenge;
 
+use edfa3ly\Challenge\Products\Product;
+use edfa3ly\Challenge\Promotions\Promotion;
 use edfa3ly\Challenge\Prototype\CartReturn;
 use edfa3ly\Challenge\Prototype\DiscountItem;
+use edfa3ly\Challenge\Tax\ITax;
 
 
 class CartHandler implements IHandler
 {
 
     /**
-     * @var array $products
+     * @var array<string> $products
      */
-    private $products  = [];
+    private array $products  = [];
 
     /**
-     * @var array $taxes
+     * @var array<ITax> $taxes
      */
-    private $taxes = [];
+    private array $taxes = [];
 
     /**
-     * @var array $promotions
+     * @var array<Promotion> $promotions
      */
-    private $promotions= [];
+    private array $promotions= [];
 
     /**
      * CartHandler constructor.
-     * @param array $products
-     * @param array $taxes
-     * @param array $promotions
+     * @param array<string> $products
+     * @param array<ITax> $taxes
+     * @param array<Promotion> $promotions
      */
     public function __construct(array $products, $taxes = [], $promotions = [])
     {

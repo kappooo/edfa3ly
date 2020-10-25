@@ -11,13 +11,13 @@ class Rule
     /**
      * @var string $whenBuy
      */
-    private $whenBuy;
+    private string $whenBuy;
 
 
     /**
      * @var int $count
      */
-    private $count;
+    private int $count;
 
 
     /**
@@ -32,15 +32,18 @@ class Rule
     }
 
     /**
-     * @param $name
-     * @return mixed
-     * @throws NotFoundPropertyException
+     * @return string
      */
-    public function __get($name)
+    public function getWhenBuy() :string
     {
-        if (property_exists($this, $name)) {
-            return $this->$name;
-        }
-        throw new NotFoundPropertyException();
+        return $this->whenBuy;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCount() : int
+    {
+        return  $this->count;
     }
 }

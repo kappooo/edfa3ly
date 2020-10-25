@@ -3,10 +3,7 @@
 
 namespace edfa3ly\Challenge;
 
-
-use edfa3ly\Challenge\Currency\Currency;
 use edfa3ly\Challenge\Currency\ICurrency;
-use edfa3ly\Challenge\Output\HtmlOutput;
 use edfa3ly\Challenge\Prototype\CartReturn;
 
 class CurrencyHandler
@@ -14,13 +11,13 @@ class CurrencyHandler
     /**
      * @var IHandler $handler
      */
-    private $handler;
+    private IHandler $handler;
 
 
     /**
      * @var ICurrency $currency
      */
-    private $currency;
+    private ICurrency $currency;
 
 
     public function __construct(IHandler $handler, ICurrency $currency)
@@ -38,9 +35,9 @@ class CurrencyHandler
     }
 
     /**
-     * @return Currency
+     * @return ICurrency
      */
-    public function getCurrency() : Currency
+    public function getCurrency() : ICurrency
     {
         return $this->currency;
     }

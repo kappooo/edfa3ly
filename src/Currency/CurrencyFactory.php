@@ -13,7 +13,7 @@ class CurrencyFactory
     ];
 
 
-    public static function getCurrency(string  $currency)
+    public static function getCurrency(string  $currency) : Currency
     {
         $class = self::CURRENCIES[strtoupper($currency)];
         return new $class();

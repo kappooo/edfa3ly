@@ -11,18 +11,18 @@ class DiscountItem
     /**
      * @var float $discountPercentage
      */
-    private $discountPercentage;
+    private float $discountPercentage;
 
     /**
      * @var string $itemName
      */
-    private $itemName;
+    private string $itemName;
 
 
     /**
      * @var float $discountValue
      */
-    private $discountValue;
+    private float $discountValue;
 
     /**
      * DiscountItem constructor.
@@ -30,18 +30,34 @@ class DiscountItem
      * @param string $itemName
      * @param float $discountValue
      */
-    public function __construct(float $discountPercentage, string  $itemName, float $discountValue)
+    public function __construct(float $discountPercentage, string $itemName, float $discountValue)
     {
         $this->discountPercentage = $discountPercentage;
         $this->itemName = $itemName;
         $this->discountValue = $discountValue;
     }
 
-    public function __get($name)
+    /**
+     * @return float
+     */
+    public function getDiscountPercentage() : float
     {
-        if (property_exists($this, $name)) {
-            return $this->$name;
-        }
-        throw new NotFoundPropertyException();
+        return $this->discountPercentage;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemName() : string
+    {
+        return $this->itemName;
+    }
+
+    /**
+     * @return float
+     */
+    public function getDiscountValue() : float
+    {
+        return $this->discountValue;
     }
 }
