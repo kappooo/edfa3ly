@@ -4,8 +4,6 @@
 namespace edfa3ly\Challenge\Prototype\Promotion;
 
 
-use edfa3ly\Challenge\Exceptions\NotFoundPropertyException;
-
 class Rule
 {
     /**

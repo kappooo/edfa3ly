@@ -1,54 +1,61 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Mon Oct 26 20:28:56 UTC 2020" phpunit="9.4.2" coverage="9.2.0">
+  <build time="Mon Oct 26 23:11:19 UTC 2020" phpunit="9.4.2" coverage="9.2.0">
     <runtime name="PHP" version="7.4.0" url="https://secure.php.net/"/>
     <driver name="xdebug" version="3.0.0beta1"/>
   </build>
   <project source="C:\wamp64\www\Edaf3ly\src">
     <tests>
-      <test name="edfa3ly\Challenge\tests\unit\CurrencyTest::testGetSymoble" size="unknown" result="0" status="PASSED"/>
-      <test name="unit\Products\ProductTest::test_map_product" size="unknown" result="0" status="PASSED"/>
+      <test name="edfa3ly\Challenge\tests\unit\CurrencyTest::test_currency_facory" size="unknown" result="0" status="PASSED"/>
+      <test name="edfa3ly\Challenge\tests\unit\CurrencyTest::test_get_right_symbol" size="unknown" result="0" status="PASSED"/>
+      <test name="edfa3ly\Challenge\tests\unit\CurrencyTest::test_format_price_within_currency" size="unknown" result="0" status="PASSED"/>
+      <test name="edfa3ly\Challenge\tests\unit\CurrencyTest::test_get_exchange_rate_per_currency" size="unknown" result="0" status="PASSED"/>
+      <test name="edfa3ly\Challenge\tests\unit\CurrencyTest::test_convert_price_due_to_local_price" size="unknown" result="0" status="PASSED"/>
+      <test name="unit\Products\MapperTest::test_get_class_from_product_name" size="unknown" result="0" status="PASSED"/>
+      <test name="unit\Products\MapperTest::test_map_products" size="unknown" result="0" status="PASSED"/>
+      <test name="unit\Products\MapperTest::test_not_found_product" size="unknown" result="0" status="PASSED"/>
+      <test name="unit\Products\MapperTest::test_no_porduct_found_in_products_item" size="unknown" result="0" status="PASSED"/>
     </tests>
     <directory name="/">
       <totals>
-        <lines total="1001" comments="297" code="704" executable="132" executed="3" percent="2.27"/>
-        <methods count="52" tested="2" percent="3.85"/>
+        <lines total="1006" comments="298" code="708" executable="136" executed="37" percent="27.21"/>
+        <methods count="52" tested="17" percent="32.69"/>
         <functions count="0" tested="0" percent="0"/>
-        <classes count="16" tested="0" percent="0.00"/>
+        <classes count="16" tested="6" percent="37.50"/>
         <traits count="0" tested="0" percent="0"/>
       </totals>
       <directory name="Currency">
         <totals>
-          <lines total="159" comments="45" code="114" executable="11" executed="1" percent="9.09"/>
-          <methods count="7" tested="1" percent="14.29"/>
+          <lines total="159" comments="45" code="114" executable="11" executed="11" percent="100.00"/>
+          <methods count="7" tested="7" percent="100.00"/>
           <functions count="0" tested="0" percent="0"/>
-          <classes count="4" tested="0" percent="0.00"/>
+          <classes count="4" tested="4" percent="100.00"/>
           <traits count="0" tested="0" percent="0"/>
         </totals>
         <file name="Currency.php" href="Currency/Currency.php.xml">
           <totals>
-            <lines total="47" comments="17" code="30" executable="5" executed="0" percent="0.00"/>
-            <methods count="2" tested="0" percent="0.00"/>
+            <lines total="47" comments="17" code="30" executable="5" executed="5" percent="100.00"/>
+            <methods count="2" tested="2" percent="100.00"/>
             <functions count="0" tested="0" percent="0"/>
-            <classes count="1" tested="0" percent="0.00"/>
+            <classes count="1" tested="1" percent="100.00"/>
             <traits count="0" tested="0" percent="0"/>
           </totals>
         </file>
         <file name="CurrencyFactory.php" href="Currency/CurrencyFactory.php.xml">
           <totals>
-            <lines total="22" comments="0" code="22" executable="2" executed="0" percent="0.00"/>
-            <methods count="1" tested="0" percent="0.00"/>
+            <lines total="22" comments="0" code="22" executable="2" executed="2" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
             <functions count="0" tested="0" percent="0"/>
-            <classes count="1" tested="0" percent="0.00"/>
+            <classes count="1" tested="1" percent="100.00"/>
             <traits count="0" tested="0" percent="0"/>
           </totals>
         </file>
         <file name="EGP.php" href="Currency/EGP.php.xml">
           <totals>
-            <lines total="25" comments="7" code="18" executable="2" executed="1" percent="50.00"/>
-            <methods count="2" tested="1" percent="50.00"/>
+            <lines total="25" comments="7" code="18" executable="2" executed="2" percent="100.00"/>
+            <methods count="2" tested="2" percent="100.00"/>
             <functions count="0" tested="0" percent="0"/>
-            <classes count="1" tested="0" percent="0.00"/>
+            <classes count="1" tested="1" percent="100.00"/>
             <traits count="0" tested="0" percent="0"/>
           </totals>
         </file>
@@ -63,28 +70,28 @@
         </file>
         <file name="USD.php" href="Currency/USD.php.xml">
           <totals>
-            <lines total="30" comments="7" code="23" executable="2" executed="0" percent="0.00"/>
-            <methods count="2" tested="0" percent="0.00"/>
+            <lines total="30" comments="7" code="23" executable="2" executed="2" percent="100.00"/>
+            <methods count="2" tested="2" percent="100.00"/>
             <functions count="0" tested="0" percent="0"/>
-            <classes count="1" tested="0" percent="0.00"/>
+            <classes count="1" tested="1" percent="100.00"/>
             <traits count="0" tested="0" percent="0"/>
           </totals>
         </file>
       </directory>
       <directory name="Exceptions">
         <totals>
-          <lines total="15" comments="0" code="15" executable="2" executed="0" percent="0.00"/>
-          <methods count="1" tested="0" percent="0.00"/>
+          <lines total="16" comments="0" code="16" executable="2" executed="2" percent="100.00"/>
+          <methods count="1" tested="1" percent="100.00"/>
           <functions count="0" tested="0" percent="0"/>
-          <classes count="1" tested="0" percent="0.00"/>
+          <classes count="1" tested="1" percent="100.00"/>
           <traits count="0" tested="0" percent="0"/>
         </totals>
-        <file name="NotFoundPropertyException.php" href="Exceptions/NotFoundPropertyException.php.xml">
+        <file name="NotFoundProduct.php" href="Exceptions/NotFoundProduct.php.xml">
           <totals>
-            <lines total="15" comments="0" code="15" executable="2" executed="0" percent="0.00"/>
-            <methods count="1" tested="0" percent="0.00"/>
+            <lines total="16" comments="0" code="16" executable="2" executed="2" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
             <functions count="0" tested="0" percent="0"/>
-            <classes count="1" tested="0" percent="0.00"/>
+            <classes count="1" tested="1" percent="100.00"/>
             <traits count="0" tested="0" percent="0"/>
           </totals>
         </file>
@@ -190,15 +197,15 @@
       </directory>
       <directory name="Prototype">
         <totals>
-          <lines total="287" comments="108" code="179" executable="35" executed="0" percent="0.00"/>
-          <methods count="20" tested="0" percent="0.00"/>
+          <lines total="283" comments="108" code="175" executable="35" executed="14" percent="40.00"/>
+          <methods count="20" tested="7" percent="35.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="4" tested="0" percent="0.00"/>
           <traits count="0" tested="0" percent="0"/>
         </totals>
         <directory name="Promotion">
           <totals>
-            <lines total="115" comments="41" code="74" executable="12" executed="0" percent="0.00"/>
+            <lines total="111" comments="41" code="70" executable="12" executed="0" percent="0.00"/>
             <methods count="7" tested="0" percent="0.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="2" tested="0" percent="0.00"/>
@@ -206,7 +213,7 @@
           </totals>
           <file name="Action.php" href="Prototype/Promotion/Action.php.xml">
             <totals>
-              <lines total="66" comments="24" code="42" executable="7" executed="0" percent="0.00"/>
+              <lines total="64" comments="24" code="40" executable="7" executed="0" percent="0.00"/>
               <methods count="4" tested="0" percent="0.00"/>
               <functions count="0" tested="0" percent="0"/>
               <classes count="1" tested="0" percent="0.00"/>
@@ -215,7 +222,7 @@
           </file>
           <file name="Rule.php" href="Prototype/Promotion/Rule.php.xml">
             <totals>
-              <lines total="49" comments="17" code="32" executable="5" executed="0" percent="0.00"/>
+              <lines total="47" comments="17" code="30" executable="5" executed="0" percent="0.00"/>
               <methods count="3" tested="0" percent="0.00"/>
               <functions count="0" tested="0" percent="0"/>
               <classes count="1" tested="0" percent="0.00"/>
@@ -225,8 +232,8 @@
         </directory>
         <file name="CartReturn.php" href="Prototype/CartReturn.php.xml">
           <totals>
-            <lines total="109" comments="43" code="66" executable="16" executed="0" percent="0.00"/>
-            <methods count="9" tested="0" percent="0.00"/>
+            <lines total="109" comments="43" code="66" executable="16" executed="14" percent="87.50"/>
+            <methods count="9" tested="7" percent="77.78"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
             <traits count="0" tested="0" percent="0"/>
@@ -298,10 +305,10 @@
       </file>
       <file name="Mapper.php" href="Mapper.php.xml">
         <totals>
-          <lines total="37" comments="8" code="29" executable="6" executed="2" percent="33.33"/>
-          <methods count="2" tested="1" percent="50.00"/>
+          <lines total="45" comments="9" code="36" executable="10" executed="10" percent="100.00"/>
+          <methods count="2" tested="2" percent="100.00"/>
           <functions count="0" tested="0" percent="0"/>
-          <classes count="1" tested="0" percent="0.00"/>
+          <classes count="1" tested="1" percent="100.00"/>
           <traits count="0" tested="0" percent="0"/>
         </totals>
       </file>

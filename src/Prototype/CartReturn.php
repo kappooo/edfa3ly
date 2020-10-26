@@ -53,7 +53,7 @@ class CartReturn
      */
     public function getTotalDiscount() : float
     {
-        return $this->totalTaxes;
+        return $this->totalDiscount;
     }
 
     /**

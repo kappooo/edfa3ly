@@ -2,23 +2,53 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="Mapper.php" path="\">
     <totals>
-      <lines total="37" comments="8" code="29" executable="6" executed="2" percent="33.33"/>
-      <methods count="2" tested="1" percent="50.00"/>
+      <lines total="45" comments="9" code="36" executable="10" executed="10" percent="100.00"/>
+      <methods count="2" tested="2" percent="100.00"/>
       <functions count="0" tested="0" percent="0"/>
-      <classes count="1" tested="0" percent="0.00"/>
+      <classes count="1" tested="1" percent="100.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="edfa3ly\Challenge\Mapper" start="7" executable="6" executed="2" crap="3.19">
+    <class name="edfa3ly\Challenge\Mapper" start="8" executable="10" executed="10" crap="4">
       <namespace name="edfa3ly\Challenge"/>
-      <method name="mapProducts" signature="mapProducts(array $data): array" start="20" end="26" crap="2" executable="4" executed="0" coverage="0"/>
-      <method name="getClassOfProduct" signature="getClassOfProduct(string $product_name): edfa3ly\Challenge\Products\Product" start="32" end="36" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="mapProducts" signature="mapProducts(array $data): array" start="21" end="30" crap="2" executable="6" executed="6" coverage="100"/>
+      <method name="getClassOfProduct" signature="getClassOfProduct(string $product_name): edfa3ly\Challenge\Products\Product" start="37" end="44" crap="2" executable="4" executed="4" coverage="100"/>
     </class>
     <coverage>
-      <line nr="34">
-        <covered by="unit\Products\ProductTest::test_map_product"/>
+      <line nr="23">
+        <covered by="unit\Products\MapperTest::test_map_products"/>
+        <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
       </line>
-      <line nr="35">
-        <covered by="unit\Products\ProductTest::test_map_product"/>
+      <line nr="24">
+        <covered by="unit\Products\MapperTest::test_map_products"/>
+        <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+      </line>
+      <line nr="25">
+        <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+      </line>
+      <line nr="27">
+        <covered by="unit\Products\MapperTest::test_map_products"/>
+        <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+      </line>
+      <line nr="28">
+        <covered by="unit\Products\MapperTest::test_map_products"/>
+        <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+      </line>
+      <line nr="29">
+        <covered by="unit\Products\MapperTest::test_map_products"/>
+        <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+      </line>
+      <line nr="39">
+        <covered by="unit\Products\MapperTest::test_get_class_from_product_name"/>
+        <covered by="unit\Products\MapperTest::test_not_found_product"/>
+      </line>
+      <line nr="40">
+        <covered by="unit\Products\MapperTest::test_not_found_product"/>
+      </line>
+      <line nr="42">
+        <covered by="unit\Products\MapperTest::test_get_class_from_product_name"/>
+      </line>
+      <line nr="43">
+        <covered by="unit\Products\MapperTest::test_get_class_from_product_name"/>
       </line>
     </coverage>
     <source>
@@ -36,6 +66,18 @@
       </line>
       <line no="4"/>
       <line no="5">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">edfa3ly</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Challenge</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Exceptions</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">NotFoundProduct</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="6">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">edfa3ly</token>
@@ -61,16 +103,16 @@
         <token name="T_CLOSE_CURLY">}</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="6"/>
-      <line no="7">
+      <line no="7"/>
+      <line no="8">
         <token name="T_CLASS">class</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">Mapper</token>
       </line>
-      <line no="8">
+      <line no="9">
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="9">
+      <line no="10">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CONST">const</token>
         <token name="T_WHITESPACE"> </token>
@@ -80,7 +122,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_SQUARE">[</token>
       </line>
-      <line no="10">
+      <line no="11">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'T-shirt'</token>
         <token name="T_WHITESPACE"> </token>
@@ -91,7 +133,7 @@
         <token name="T_CLASS">class</token>
         <token name="T_COMMA">,</token>
       </line>
-      <line no="11">
+      <line no="12">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'Shoes'</token>
         <token name="T_WHITESPACE"> </token>
@@ -102,7 +144,7 @@
         <token name="T_CLASS">class</token>
         <token name="T_COMMA">,</token>
       </line>
-      <line no="12">
+      <line no="13">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'Jacket'</token>
         <token name="T_WHITESPACE"> </token>
@@ -113,7 +155,7 @@
         <token name="T_CLASS">class</token>
         <token name="T_COMMA">,</token>
       </line>
-      <line no="13">
+      <line no="14">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'Pants'</token>
         <token name="T_WHITESPACE"> </token>
@@ -124,26 +166,26 @@
         <token name="T_CLASS">class</token>
         <token name="T_COMMA">,</token>
       </line>
-      <line no="14">
+      <line no="15">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_SQUARE">]</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="15"/>
-      <line no="16">
+      <line no="16"/>
+      <line no="17">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="17">
-        <token name="T_DOC_COMMENT">     * @param array&lt;string&gt; $data</token>
-      </line>
       <line no="18">
-        <token name="T_DOC_COMMENT">     * @return array&lt;Product&gt;</token>
+        <token name="T_DOC_COMMENT">     * @param array $data</token>
       </line>
       <line no="19">
-        <token name="T_DOC_COMMENT">     */</token>
+        <token name="T_DOC_COMMENT">     * @return array</token>
       </line>
       <line no="20">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="21">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -161,11 +203,11 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_ARRAY">array</token>
       </line>
-      <line no="21">
+      <line no="22">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="22">
+      <line no="23">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -179,7 +221,42 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="23">
+      <line no="24">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_ISSET">isset</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STATIC">static</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PRODUCTS_LIST</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_STRING">ucwords</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$item</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="25">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_THROW">throw</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">NotFoundProduct</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="26">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="27">
         <token name="T_WHITESPACE">            </token>
         <token name="T_VARIABLE">$class</token>
         <token name="T_WHITESPACE"> </token>
@@ -196,7 +273,7 @@
         <token name="T_CLOSE_SQUARE">]</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="24">
+      <line no="28">
         <token name="T_WHITESPACE">            </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -209,7 +286,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="25">
+      <line no="29">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
         <token name="T_COMMA">,</token>
@@ -218,25 +295,28 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="26">
+      <line no="30">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="27"/>
-      <line no="28">
+      <line no="31"/>
+      <line no="32">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="29">
+      <line no="33">
         <token name="T_DOC_COMMENT">     * @param string $product_name</token>
       </line>
-      <line no="30">
+      <line no="34">
         <token name="T_DOC_COMMENT">     * @return Product</token>
       </line>
-      <line no="31">
+      <line no="35">
+        <token name="T_DOC_COMMENT">     * @throws NotFoundProduct</token>
+      </line>
+      <line no="36">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="32">
+      <line no="37">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -255,11 +335,46 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">Product</token>
       </line>
-      <line no="33">
+      <line no="38">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="34">
+      <line no="39">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_ISSET">isset</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STATIC">static</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PRODUCTS_LIST</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_STRING">ucwords</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$product_name</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="40">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_THROW">throw</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">NotFoundProduct</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="41">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="42">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$class</token>
         <token name="T_WHITESPACE"> </token>
@@ -276,7 +391,7 @@
         <token name="T_CLOSE_SQUARE">]</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="35">
+      <line no="43">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -287,14 +402,14 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="36">
+      <line no="44">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="37">
+      <line no="45">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="38"/>
+      <line no="46"/>
     </source>
   </file>
 </phpunit>

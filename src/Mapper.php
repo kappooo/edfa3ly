@@ -2,6 +2,7 @@
 
 namespace edfa3ly\Challenge;
 
+use edfa3ly\Challenge\Exceptions\NotFoundProduct;
 use edfa3ly\Challenge\Products\{Product, TShirt, Pants, Jacket, Shoes};
 
 class Mapper
@@ -14,12 +15,15 @@ class Mapper
     ];
 
     /**
-     * @param array<string> $data
-     * @return array<Product>
+     * @param array $data
+     * @return array
      */
     public static function mapProducts(array $data): array
     {
         return array_map(function ($item) {
+            if (!isset(static::PRODUCTS_LIST[ucwords($item)])) {
+                throw new NotFoundProduct;
+            }
             $class = static::PRODUCTS_LIST[ucwords($item)];
             return (new $class());
         }, $data);
@@ -28,9 +32,13 @@ class Mapper
     /**
      * @param string $product_name
      * @return Product
+     * @throws NotFoundProduct
      */
     public static function getClassOfProduct(string $product_name) : Product
     {
+        if (!isset(static::PRODUCTS_LIST[ucwords($product_name)])) {
+            throw new NotFoundProduct;
+        }
         $class = static::PRODUCTS_LIST[ucwords($product_name)];
         return new $class();
     }

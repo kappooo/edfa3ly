@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1603744135">
-  <project timestamp="1603744135">
+<coverage generated="1603753879">
+  <project timestamp="1603753879">
     <file name="C:\wamp64\www\Edaf3ly\src\CartHandler.php">
       <class name="edfa3ly\Challenge\CartHandler" namespace="global">
         <metrics complexity="6" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="0" elements="22" coveredelements="0"/>
@@ -45,74 +45,78 @@
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Currency\Currency.php">
       <class name="edfa3ly\Challenge\Currency\Currency" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="7" coveredelements="0"/>
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
       </class>
-      <line num="30" type="method" name="getCurrencyExchangeRate" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="32" type="stmt" count="0"/>
-      <line num="40" type="method" name="convertPrices" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="42" type="stmt" count="0"/>
-      <line num="43" type="stmt" count="0"/>
-      <line num="44" type="stmt" count="0"/>
-      <line num="45" type="stmt" count="0"/>
-      <metrics loc="47" ncloc="30" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="7" coveredelements="0"/>
+      <line num="30" type="method" name="getCurrencyExchangeRate" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="32" type="stmt" count="2"/>
+      <line num="40" type="method" name="convertPrices" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="44" type="stmt" count="1"/>
+      <line num="45" type="stmt" count="1"/>
+      <metrics loc="47" ncloc="30" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Currency\CurrencyFactory.php">
       <class name="edfa3ly\Challenge\Currency\CurrencyFactory" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </class>
-      <line num="16" type="method" name="getCurrency" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="18" type="stmt" count="0"/>
-      <line num="19" type="stmt" count="0"/>
-      <metrics loc="22" ncloc="22" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      <line num="16" type="method" name="getCurrency" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <metrics loc="22" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Currency\EGP.php">
       <class name="edfa3ly\Challenge\Currency\EGP" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
       </class>
-      <line num="12" type="method" name="getCurrencySymbol" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="14" type="stmt" count="1"/>
-      <line num="21" type="method" name="formatCurrency" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="23" type="stmt" count="0"/>
-      <metrics loc="25" ncloc="18" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+      <line num="12" type="method" name="getCurrencySymbol" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <line num="21" type="method" name="formatCurrency" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <metrics loc="25" ncloc="18" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Currency\ICurrency.php">
       <metrics loc="35" ncloc="21" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Currency\USD.php">
       <class name="edfa3ly\Challenge\Currency\USD" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
       </class>
-      <line num="15" type="method" name="getCurrencySymbol" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="17" type="stmt" count="0"/>
-      <line num="24" type="method" name="formatCurrency" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="26" type="stmt" count="0"/>
-      <metrics loc="30" ncloc="23" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      <line num="15" type="method" name="getCurrencySymbol" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="24" type="method" name="formatCurrency" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <metrics loc="30" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
     </file>
-    <file name="C:\wamp64\www\Edaf3ly\src\Exceptions\NotFoundPropertyException.php">
-      <class name="edfa3ly\Challenge\Exceptions\NotFoundPropertyException" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    <file name="C:\wamp64\www\Edaf3ly\src\Exceptions\NotFoundProduct.php">
+      <class name="edfa3ly\Challenge\Exceptions\NotFoundProduct" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </class>
-      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="13" type="stmt" count="0"/>
-      <line num="14" type="stmt" count="0"/>
-      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <line num="15" type="stmt" count="2"/>
+      <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\IHandler.php">
       <metrics loc="19" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Mapper.php">
       <class name="edfa3ly\Challenge\Mapper" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="2" elements="8" coveredelements="3"/>
+        <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
       </class>
-      <line num="20" type="method" name="mapProducts" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="22" type="stmt" count="0"/>
-      <line num="23" type="stmt" count="0"/>
-      <line num="24" type="stmt" count="0"/>
-      <line num="25" type="stmt" count="0"/>
-      <line num="32" type="method" name="getClassOfProduct" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="34" type="stmt" count="1"/>
-      <line num="35" type="stmt" count="1"/>
-      <metrics loc="37" ncloc="29" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="2" elements="8" coveredelements="3"/>
+      <line num="21" type="method" name="mapProducts" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <line num="29" type="stmt" count="2"/>
+      <line num="37" type="method" name="getClassOfProduct" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="39" type="stmt" count="2"/>
+      <line num="40" type="stmt" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <metrics loc="45" ncloc="36" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Output\CommandLineOutput.php">
       <class name="edfa3ly\Challenge\Output\CommandLineOutput" namespace="global">
@@ -229,34 +233,34 @@
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Prototype\CartReturn.php">
       <class name="edfa3ly\Challenge\Prototype\CartReturn" namespace="global">
-        <metrics complexity="9" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="25" coveredelements="0"/>
+        <metrics complexity="9" methods="9" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="14" elements="25" coveredelements="21"/>
       </class>
-      <line num="35" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="37" type="stmt" count="0"/>
-      <line num="38" type="stmt" count="0"/>
-      <line num="39" type="stmt" count="0"/>
-      <line num="40" type="stmt" count="0"/>
-      <line num="41" type="stmt" count="0"/>
-      <line num="46" type="method" name="getTotalTaxes" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="48" type="stmt" count="0"/>
-      <line num="54" type="method" name="getTotalDiscount" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="56" type="stmt" count="0"/>
-      <line num="62" type="method" name="getSubTotalPrice" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="64" type="stmt" count="0"/>
+      <line num="35" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="40" type="stmt" count="1"/>
+      <line num="41" type="stmt" count="1"/>
+      <line num="46" type="method" name="getTotalTaxes" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="54" type="method" name="getTotalDiscount" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="56" type="stmt" count="1"/>
+      <line num="62" type="method" name="getSubTotalPrice" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="64" type="stmt" count="1"/>
       <line num="71" type="method" name="getDiscountItems" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="73" type="stmt" count="0"/>
       <line num="79" type="method" name="getTotalPrice" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="81" type="stmt" count="0"/>
-      <line num="88" type="method" name="setTotalTaxes" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="90" type="stmt" count="0"/>
-      <line num="91" type="stmt" count="0"/>
-      <line num="96" type="method" name="setTotalDiscount" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="98" type="stmt" count="0"/>
-      <line num="99" type="stmt" count="0"/>
-      <line num="104" type="method" name="setSubtotalPrice" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="106" type="stmt" count="0"/>
-      <line num="107" type="stmt" count="0"/>
-      <metrics loc="109" ncloc="66" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="25" coveredelements="0"/>
+      <line num="88" type="method" name="setTotalTaxes" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="90" type="stmt" count="1"/>
+      <line num="91" type="stmt" count="1"/>
+      <line num="96" type="method" name="setTotalDiscount" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="98" type="stmt" count="1"/>
+      <line num="99" type="stmt" count="1"/>
+      <line num="104" type="method" name="setSubtotalPrice" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="106" type="stmt" count="1"/>
+      <line num="107" type="stmt" count="1"/>
+      <metrics loc="109" ncloc="66" classes="1" methods="9" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="14" elements="25" coveredelements="21"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Prototype\DiscountItem.php">
       <class name="edfa3ly\Challenge\Prototype\DiscountItem" namespace="global">
@@ -279,32 +283,32 @@
       <class name="edfa3ly\Challenge\Prototype\Promotion\Action" namespace="global">
         <metrics complexity="4" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="11" coveredelements="0"/>
       </class>
-      <line num="36" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="34" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
       <line num="38" type="stmt" count="0"/>
       <line num="39" type="stmt" count="0"/>
-      <line num="40" type="stmt" count="0"/>
-      <line num="41" type="stmt" count="0"/>
-      <line num="46" type="method" name="getApplyOn" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="48" type="stmt" count="0"/>
-      <line num="54" type="method" name="getType" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="56" type="stmt" count="0"/>
-      <line num="62" type="method" name="getValue" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="64" type="stmt" count="0"/>
-      <metrics loc="66" ncloc="42" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="11" coveredelements="0"/>
+      <line num="44" type="method" name="getApplyOn" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="46" type="stmt" count="0"/>
+      <line num="52" type="method" name="getType" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="60" type="method" name="getValue" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="62" type="stmt" count="0"/>
+      <metrics loc="64" ncloc="40" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="11" coveredelements="0"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Prototype\Promotion\Rule.php">
       <class name="edfa3ly\Challenge\Prototype\Promotion\Rule" namespace="global">
         <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="8" coveredelements="0"/>
       </class>
-      <line num="28" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
       <line num="30" type="stmt" count="0"/>
-      <line num="31" type="stmt" count="0"/>
-      <line num="32" type="stmt" count="0"/>
-      <line num="37" type="method" name="getWhenBuy" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="39" type="stmt" count="0"/>
-      <line num="45" type="method" name="getCount" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="47" type="stmt" count="0"/>
-      <metrics loc="49" ncloc="32" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="8" coveredelements="0"/>
+      <line num="35" type="method" name="getWhenBuy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="43" type="method" name="getCount" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="45" type="stmt" count="0"/>
+      <metrics loc="47" ncloc="30" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="8" coveredelements="0"/>
     </file>
     <file name="C:\wamp64\www\Edaf3ly\src\Tax\ITax.php">
       <metrics loc="13" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -317,6 +321,6 @@
       <line num="20" type="stmt" count="0"/>
       <metrics loc="23" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
     </file>
-    <metrics files="24" loc="1001" ncloc="704" classes="16" methods="52" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="132" coveredstatements="3" elements="184" coveredelements="5"/>
+    <metrics files="24" loc="1006" ncloc="708" classes="16" methods="52" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="136" coveredstatements="37" elements="188" coveredelements="54"/>
   </project>
 </coverage>

@@ -2,20 +2,24 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="EGP.php" path="\Currency">
     <totals>
-      <lines total="25" comments="7" code="18" executable="2" executed="1" percent="50.00"/>
-      <methods count="2" tested="1" percent="50.00"/>
+      <lines total="25" comments="7" code="18" executable="2" executed="2" percent="100.00"/>
+      <methods count="2" tested="2" percent="100.00"/>
       <functions count="0" tested="0" percent="0"/>
-      <classes count="1" tested="0" percent="0.00"/>
+      <classes count="1" tested="1" percent="100.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="edfa3ly\Challenge\Currency\EGP" start="5" executable="2" executed="1" crap="2.5">
+    <class name="edfa3ly\Challenge\Currency\EGP" start="5" executable="2" executed="2" crap="2">
       <namespace name="edfa3ly\Challenge\Currency"/>
       <method name="getCurrencySymbol" signature="getCurrencySymbol(): string" start="12" end="15" crap="1" executable="1" executed="1" coverage="100"/>
-      <method name="formatCurrency" signature="formatCurrency(float $number): string" start="21" end="24" crap="2" executable="1" executed="0" coverage="0"/>
+      <method name="formatCurrency" signature="formatCurrency(float $number): string" start="21" end="24" crap="1" executable="1" executed="1" coverage="100"/>
     </class>
     <coverage>
       <line nr="14">
-        <covered by="edfa3ly\Challenge\tests\unit\CurrencyTest::testGetSymoble"/>
+        <covered by="edfa3ly\Challenge\tests\unit\CurrencyTest::test_get_right_symbol"/>
+        <covered by="edfa3ly\Challenge\tests\unit\CurrencyTest::test_format_price_within_currency"/>
+      </line>
+      <line nr="23">
+        <covered by="edfa3ly\Challenge\tests\unit\CurrencyTest::test_format_price_within_currency"/>
       </line>
     </coverage>
     <source>
