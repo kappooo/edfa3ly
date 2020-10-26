@@ -1,0 +1,613 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="Promotion.php" path="\Promotions">
+    <totals>
+      <lines total="90" comments="24" code="66" executable="23" executed="0" percent="0.00"/>
+      <methods count="5" tested="0" percent="0.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="0" percent="0.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="edfa3ly\Challenge\Promotions\Promotion" start="11" executable="23" executed="0" crap="132">
+      <namespace name="edfa3ly\Challenge\Promotions"/>
+      <method name="addRule" signature="addRule(edfa3ly\Challenge\Prototype\Promotion\Rule $rule): void" start="28" end="31" crap="2" executable="2" executed="0" coverage="0"/>
+      <method name="addAction" signature="addAction(edfa3ly\Challenge\Prototype\Promotion\Action $action): void" start="36" end="39" crap="2" executable="2" executed="0" coverage="0"/>
+      <method name="isItemEligibleForPromotion" signature="isItemEligibleForPromotion(edfa3ly\Challenge\Products\Product $product, array $items): bool" start="46" end="62" crap="20" executable="10" executed="0" coverage="0"/>
+      <method name="applyPromotionIfEligible" signature="applyPromotionIfEligible(edfa3ly\Challenge\Products\Product $product, array $items): void" start="69" end="74" crap="6" executable="3" executed="0" coverage="0"/>
+      <method name="applyAction" signature="applyAction(edfa3ly\Challenge\Products\Product $product): void" start="79" end="88" crap="12" executable="6" executed="0" coverage="0"/>
+    </class>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2"/>
+      <line no="3"/>
+      <line no="4">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">edfa3ly</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Challenge</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Promotions</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="5"/>
+      <line no="6">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">edfa3ly</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Challenge</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Mapper</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="7">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">edfa3ly</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Challenge</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Products</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Product</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="8">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">edfa3ly</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Challenge</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Prototype</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Promotion</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Action</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="9">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">edfa3ly</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Challenge</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Prototype</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Promotion</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Rule</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="10"/>
+      <line no="11">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Promotion</token>
+      </line>
+      <line no="12">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="13">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="14">
+        <token name="T_DOC_COMMENT">     * @var  Rule $rule</token>
+      </line>
+      <line no="15">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="16">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PRIVATE">private</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Rule</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$rule</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="17"/>
+      <line no="18"/>
+      <line no="19">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="20">
+        <token name="T_DOC_COMMENT">     * @var Action $action</token>
+      </line>
+      <line no="21">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="22">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PRIVATE">private</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Action</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$action</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="23"/>
+      <line no="24"/>
+      <line no="25">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="26">
+        <token name="T_DOC_COMMENT">     * @param Rule $rule</token>
+      </line>
+      <line no="27">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="28">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">addRule</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Rule</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$rule</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
+      </line>
+      <line no="29">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="30">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">rule</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$rule</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="31">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="32"/>
+      <line no="33">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="34">
+        <token name="T_DOC_COMMENT">     * @param Action $action</token>
+      </line>
+      <line no="35">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">addAction</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Action</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$action</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
+      </line>
+      <line no="37">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="38">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">action</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$action</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="39">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="40"/>
+      <line no="41">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="42">
+        <token name="T_DOC_COMMENT">     * @param Product $product</token>
+      </line>
+      <line no="43">
+        <token name="T_DOC_COMMENT">     * @param array&lt;Product&gt; $items</token>
+      </line>
+      <line no="44">
+        <token name="T_DOC_COMMENT">     * @return bool</token>
+      </line>
+      <line no="45">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="46">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">isItemEligibleForPromotion</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Product</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$product</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$items</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$productToBeFoundOnList</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Mapper</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">getClassOfProduct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">rule</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getWhenBuy</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$countOfProductToBeFoundOnList</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="50">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">array_walk</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$items</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$item</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$productToBeFoundOnList</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_AMPERSAND">&amp;</token>
+        <token name="T_VARIABLE">$countOfProductToBeFoundOnList</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="51">
+        <token name="T_WHITESPACE">           </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">get_class</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$item</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_EQUAL">==</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">get_class</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$productToBeFoundOnList</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">               </token>
+        <token name="T_VARIABLE">$countOfProductToBeFoundOnList</token>
+        <token name="T_INC">++</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">           </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="54">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="55">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$countOfProductToBeFoundOnList</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_GREATER_OR_EQUAL">&gt;=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">rule</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getCount</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+      </line>
+      <line no="57">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_STRING">get_class</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$product</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_EQUAL">==</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">get_class</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Mapper</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">getClassOfProduct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">action</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getApplyOn</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="58">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="59">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="60">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="61">
+        <token name="T_WHITESPACE">       </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="62">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="63"/>
+      <line no="64"/>
+      <line no="65">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="66">
+        <token name="T_DOC_COMMENT">     * @param Product $product</token>
+      </line>
+      <line no="67">
+        <token name="T_DOC_COMMENT">     * @param array&lt;Product&gt; $items</token>
+      </line>
+      <line no="68">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="69">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">applyPromotionIfEligible</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Product</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$product</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$items</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
+      </line>
+      <line no="70">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="71">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">isItemEligibleForPromotion</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$product</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$items</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="72">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">applyAction</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$product</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="73">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="74">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="75"/>
+      <line no="76">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="77">
+        <token name="T_DOC_COMMENT">     * @param Product $product</token>
+      </line>
+      <line no="78">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="79">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PRIVATE">private</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">applyAction</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Product</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$product</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
+      </line>
+      <line no="80">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="81">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_SWITCH">switch</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">action</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getType</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="82">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CASE">case</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'discount'</token>
+        <token name="T_COLON">:</token>
+      </line>
+      <line no="83">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$product</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">setDiscountPercentageValue</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">action</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getValue</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="84">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_BREAK">break</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="85">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_DEFAULT">default</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+      </line>
+      <line no="86"/>
+      <line no="87">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="88">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="89"/>
+      <line no="90">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="91"/>
+    </source>
+  </file>
+</phpunit>

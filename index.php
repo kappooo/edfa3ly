@@ -11,11 +11,11 @@ use edfa3ly\Challenge\Prototype\Promotion\Action;
 use edfa3ly\Challenge\Currency\CurrencyFactory;
 
 
+$data  = ['T-shirt'];
 //$data = array_splice($_SERVER['argv'], 3);
-//$currency = substr($_SERVER['argv'][2], strpos( $_SERVER['argv'][2], '=') + 1);
 
-$data = ['T-shirt', 'T-shirt', 'Jacket', 'Shoes'];
 $currency = 'EGP';
+//$currency = substr($_SERVER['argv'][2], strpos( $_SERVER['argv'][2], '=') + 1);
 
 $taxes = [new VatTax()];
 
@@ -25,28 +25,3 @@ $promotionObject->addAction(new Action('Jacket','discount',  50));
 $promotions = [$promotionObject];
 
 print_r((new CommandLineOutput((new CurrencyHandler(new CartHandler($data, $taxes, $promotions), CurrencyFactory::getCurrency($currency)))))->getOutputSentence());
-
-//php index.php createCart --bill-currency=USD T-shirt T-shirt shoes
-
-
-use SebastianBergmann\CodeCoverage\Filter;
-use SebastianBergmann\CodeCoverage\Driver\Selector;
-use SebastianBergmann\CodeCoverage\CodeCoverage;
-use SebastianBergmann\CodeCoverage\Report\Html\Facade as HtmlReport;
-
-$filter = new Filter;
-$filter->includeDirectory('/src');
-
-$coverage = new CodeCoverage(
-    (new Selector)->forLineCoverage($filter),
-    $filter
-);
-
-$coverage->start('<name of test>');
-
-// ...
-
-$coverage->stop();
-
-
-(new HtmlReport)->process($coverage, 'code-coverage-report');

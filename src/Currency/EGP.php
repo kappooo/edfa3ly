@@ -1,10 +1,6 @@
 <?php
 
-
 namespace edfa3ly\Challenge\Currency;
-
-
-use edfa3ly\Challenge\Prototype\CartReturn;
 
 class EGP extends Currency
 {

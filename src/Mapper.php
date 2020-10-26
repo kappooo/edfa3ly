@@ -31,7 +31,7 @@ class Mapper
      */
     public static function getClassOfProduct(string $product_name) : Product
     {
-        $class = static::PRODUCTS_LIST[$product_name];
+        $class = static::PRODUCTS_LIST[ucwords($product_name)];
         return new $class();
     }
 }

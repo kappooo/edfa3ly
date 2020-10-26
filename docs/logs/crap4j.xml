@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2020-10-26 20:28:56</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>54</methodCount>
+    <crapMethodCount>1</crapMethodCount>
+    <crapLoad>5</crapLoad>
+    <totalCrap>176</totalCrap>
+    <crapMethodPercent>1.85</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>edfa3ly\Challenge</package>
+      <className>edfa3ly\Challenge\CartHandler</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $products, $taxes, $promotions)</methodSignature>
+      <fullMethod>__construct(array $products, $taxes, $promotions)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge</package>
+      <className>edfa3ly\Challenge\CartHandler</className>
+      <methodName>handel</methodName>
+      <methodSignature>handel(): edfa3ly\Challenge\Prototype\CartReturn</methodSignature>
+      <fullMethod>handel(): edfa3ly\Challenge\Prototype\CartReturn</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge</package>
+      <className>edfa3ly\Challenge\CurrencyHandler</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(edfa3ly\Challenge\IHandler $handler, edfa3ly\Challenge\Currency\ICurrency $currency)</methodSignature>
+      <fullMethod>__construct(edfa3ly\Challenge\IHandler $handler, edfa3ly\Challenge\Currency\ICurrency $currency)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge</package>
+      <className>edfa3ly\Challenge\CurrencyHandler</className>
+      <methodName>convertCurrencyExchange</methodName>
+      <methodSignature>convertCurrencyExchange(): edfa3ly\Challenge\Prototype\CartReturn</methodSignature>
+      <fullMethod>convertCurrencyExchange(): edfa3ly\Challenge\Prototype\CartReturn</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge</package>
+      <className>edfa3ly\Challenge\CurrencyHandler</className>
+      <methodName>getCurrency</methodName>
+      <methodSignature>getCurrency(): edfa3ly\Challenge\Currency\ICurrency</methodSignature>
+      <fullMethod>getCurrency(): edfa3ly\Challenge\Currency\ICurrency</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\Currency</className>
+      <methodName>getCurrencySymbol</methodName>
+      <methodSignature>getCurrencySymbol(): string</methodSignature>
+      <fullMethod>getCurrencySymbol(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\Currency</className>
+      <methodName>formatCurrency</methodName>
+      <methodSignature>formatCurrency(float $number): string</methodSignature>
+      <fullMethod>formatCurrency(float $number): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\Currency</className>
+      <methodName>getCurrencyExchangeRate</methodName>
+      <methodSignature>getCurrencyExchangeRate(): float</methodSignature>
+      <fullMethod>getCurrencyExchangeRate(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\Currency</className>
+      <methodName>convertPrices</methodName>
+      <methodSignature>convertPrices(edfa3ly\Challenge\Prototype\CartReturn $cartReturn): edfa3ly\Challenge\Prototype\CartReturn</methodSignature>
+      <fullMethod>convertPrices(edfa3ly\Challenge\Prototype\CartReturn $cartReturn): edfa3ly\Challenge\Prototype\CartReturn</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\CurrencyFactory</className>
+      <methodName>getCurrency</methodName>
+      <methodSignature>getCurrency(string $currency): edfa3ly\Challenge\Currency\Currency</methodSignature>
+      <fullMethod>getCurrency(string $currency): edfa3ly\Challenge\Currency\Currency</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\EGP</className>
+      <methodName>getCurrencySymbol</methodName>
+      <methodSignature>getCurrencySymbol(): string</methodSignature>
+      <fullMethod>getCurrencySymbol(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\EGP</className>
+      <methodName>formatCurrency</methodName>
+      <methodSignature>formatCurrency(float $number): string</methodSignature>
+      <fullMethod>formatCurrency(float $number): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\USD</className>
+      <methodName>getCurrencySymbol</methodName>
+      <methodSignature>getCurrencySymbol(): string</methodSignature>
+      <fullMethod>getCurrencySymbol(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Currency</package>
+      <className>edfa3ly\Challenge\Currency\USD</className>
+      <methodName>formatCurrency</methodName>
+      <methodSignature>formatCurrency(float $number): string</methodSignature>
+      <fullMethod>formatCurrency(float $number): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Exceptions</package>
+      <className>edfa3ly\Challenge\Exceptions\NotFoundPropertyException</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct($message, $code, Throwable $previous)</methodSignature>
+      <fullMethod>__construct($message, $code, Throwable $previous)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge</package>
+      <className>edfa3ly\Challenge\Mapper</className>
+      <methodName>mapProducts</methodName>
+      <methodSignature>mapProducts(array $data): array</methodSignature>
+      <fullMethod>mapProducts(array $data): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge</package>
+      <className>edfa3ly\Challenge\Mapper</className>
+      <methodName>getClassOfProduct</methodName>
+      <methodSignature>getClassOfProduct(string $product_name): edfa3ly\Challenge\Products\Product</methodSignature>
+      <fullMethod>getClassOfProduct(string $product_name): edfa3ly\Challenge\Products\Product</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Output</package>
+      <className>edfa3ly\Challenge\Output\CommandLineOutput</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(edfa3ly\Challenge\CurrencyHandler $currencyHandler)</methodSignature>
+      <fullMethod>__construct(edfa3ly\Challenge\CurrencyHandler $currencyHandler)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Output</package>
+      <className>edfa3ly\Challenge\Output\CommandLineOutput</className>
+      <methodName>getOutputSentence</methodName>
+      <methodSignature>getOutputSentence(): string</methodSignature>
+      <fullMethod>getOutputSentence(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Output</package>
+      <className>edfa3ly\Challenge\Output\CommandLineOutput</className>
+      <methodName>getDiscountString</methodName>
+      <methodSignature>getDiscountString(array $discountItems, edfa3ly\Challenge\Currency\ICurrency $currency): string</methodSignature>
+      <fullMethod>getDiscountString(array $discountItems, edfa3ly\Challenge\Currency\ICurrency $currency): string</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Products</package>
+      <className>edfa3ly\Challenge\Products\Product</className>
+      <methodName>getPriceInUsd</methodName>
+      <methodSignature>getPriceInUsd(): float</methodSignature>
+      <fullMethod>getPriceInUsd(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Products</package>
+      <className>edfa3ly\Challenge\Products\Product</className>
+      <methodName>setDiscountPercentageValue</methodName>
+      <methodSignature>setDiscountPercentageValue(float $discountValue): void</methodSignature>
+      <fullMethod>setDiscountPercentageValue(float $discountValue): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Products</package>
+      <className>edfa3ly\Challenge\Products\Product</className>
+      <methodName>getDiscountPercentageValue</methodName>
+      <methodSignature>getDiscountPercentageValue(): float</methodSignature>
+      <fullMethod>getDiscountPercentageValue(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Products</package>
+      <className>edfa3ly\Challenge\Products\Product</className>
+      <methodName>getPriceAfterDiscount</methodName>
+      <methodSignature>getPriceAfterDiscount(): float</methodSignature>
+      <fullMethod>getPriceAfterDiscount(): float</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Products</package>
+      <className>edfa3ly\Challenge\Products\Product</className>
+      <methodName>getDiscountValue</methodName>
+      <methodSignature>getDiscountValue(): float</methodSignature>
+      <fullMethod>getDiscountValue(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Products</package>
+      <className>edfa3ly\Challenge\Products\Product</className>
+      <methodName>getPriceAfterTax</methodName>
+      <methodSignature>getPriceAfterTax(edfa3ly\Challenge\Tax\ITax $tax): float</methodSignature>
+      <fullMethod>getPriceAfterTax(edfa3ly\Challenge\Tax\ITax $tax): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Products</package>
+      <className>edfa3ly\Challenge\Products\Product</className>
+      <methodName>getTaxValue</methodName>
+      <methodSignature>getTaxValue(edfa3ly\Challenge\Tax\ITax $tax): float</methodSignature>
+      <fullMethod>getTaxValue(edfa3ly\Challenge\Tax\ITax $tax): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Products</package>
+      <className>edfa3ly\Challenge\Products\Product</className>
+      <methodName>getName</methodName>
+      <methodSignature>getName(): string</methodSignature>
+      <fullMethod>getName(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Promotions</package>
+      <className>edfa3ly\Challenge\Promotions\Promotion</className>
+      <methodName>addRule</methodName>
+      <methodSignature>addRule(edfa3ly\Challenge\Prototype\Promotion\Rule $rule): void</methodSignature>
+      <fullMethod>addRule(edfa3ly\Challenge\Prototype\Promotion\Rule $rule): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Promotions</package>
+      <className>edfa3ly\Challenge\Promotions\Promotion</className>
+      <methodName>addAction</methodName>
+      <methodSignature>addAction(edfa3ly\Challenge\Prototype\Promotion\Action $action): void</methodSignature>
+      <fullMethod>addAction(edfa3ly\Challenge\Prototype\Promotion\Action $action): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Promotions</package>
+      <className>edfa3ly\Challenge\Promotions\Promotion</className>
+      <methodName>isItemEligibleForPromotion</methodName>
+      <methodSignature>isItemEligibleForPromotion(edfa3ly\Challenge\Products\Product $product, array $items): bool</methodSignature>
+      <fullMethod>isItemEligibleForPromotion(edfa3ly\Challenge\Products\Product $product, array $items): bool</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Promotions</package>
+      <className>edfa3ly\Challenge\Promotions\Promotion</className>
+      <methodName>applyPromotionIfEligible</methodName>
+      <methodSignature>applyPromotionIfEligible(edfa3ly\Challenge\Products\Product $product, array $items): void</methodSignature>
+      <fullMethod>applyPromotionIfEligible(edfa3ly\Challenge\Products\Product $product, array $items): void</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Promotions</package>
+      <className>edfa3ly\Challenge\Promotions\Promotion</className>
+      <methodName>applyAction</methodName>
+      <methodSignature>applyAction(edfa3ly\Challenge\Products\Product $product): void</methodSignature>
+      <fullMethod>applyAction(edfa3ly\Challenge\Products\Product $product): void</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(float $totalTaxes, float $totalDiscount, array $discountItems, float $subTotalPrice)</methodSignature>
+      <fullMethod>__construct(float $totalTaxes, float $totalDiscount, array $discountItems, float $subTotalPrice)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>getTotalTaxes</methodName>
+      <methodSignature>getTotalTaxes(): float</methodSignature>
+      <fullMethod>getTotalTaxes(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>getTotalDiscount</methodName>
+      <methodSignature>getTotalDiscount(): float</methodSignature>
+      <fullMethod>getTotalDiscount(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>getSubTotalPrice</methodName>
+      <methodSignature>getSubTotalPrice(): float</methodSignature>
+      <fullMethod>getSubTotalPrice(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>getDiscountItems</methodName>
+      <methodSignature>getDiscountItems(): array</methodSignature>
+      <fullMethod>getDiscountItems(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>getTotalPrice</methodName>
+      <methodSignature>getTotalPrice(): float</methodSignature>
+      <fullMethod>getTotalPrice(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>setTotalTaxes</methodName>
+      <methodSignature>setTotalTaxes(float $value): void</methodSignature>
+      <fullMethod>setTotalTaxes(float $value): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>setTotalDiscount</methodName>
+      <methodSignature>setTotalDiscount(float $value): void</methodSignature>
+      <fullMethod>setTotalDiscount(float $value): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\CartReturn</className>
+      <methodName>setSubtotalPrice</methodName>
+      <methodSignature>setSubtotalPrice(float $value): void</methodSignature>
+      <fullMethod>setSubtotalPrice(float $value): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\DiscountItem</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(float $discountPercentage, string $itemName, float $discountValue)</methodSignature>
+      <fullMethod>__construct(float $discountPercentage, string $itemName, float $discountValue)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\DiscountItem</className>
+      <methodName>getDiscountPercentage</methodName>
+      <methodSignature>getDiscountPercentage(): float</methodSignature>
+      <fullMethod>getDiscountPercentage(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\DiscountItem</className>
+      <methodName>getItemName</methodName>
+      <methodSignature>getItemName(): string</methodSignature>
+      <fullMethod>getItemName(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype</package>
+      <className>edfa3ly\Challenge\Prototype\DiscountItem</className>
+      <methodName>getDiscountValue</methodName>
+      <methodSignature>getDiscountValue(): float</methodSignature>
+      <fullMethod>getDiscountValue(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype\Promotion</package>
+      <className>edfa3ly\Challenge\Prototype\Promotion\Action</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $applyOn, string $type, float $value)</methodSignature>
+      <fullMethod>__construct(string $applyOn, string $type, float $value)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype\Promotion</package>
+      <className>edfa3ly\Challenge\Prototype\Promotion\Action</className>
+      <methodName>getApplyOn</methodName>
+      <methodSignature>getApplyOn(): string</methodSignature>
+      <fullMethod>getApplyOn(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype\Promotion</package>
+      <className>edfa3ly\Challenge\Prototype\Promotion\Action</className>
+      <methodName>getType</methodName>
+      <methodSignature>getType(): string</methodSignature>
+      <fullMethod>getType(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype\Promotion</package>
+      <className>edfa3ly\Challenge\Prototype\Promotion\Action</className>
+      <methodName>getValue</methodName>
+      <methodSignature>getValue(): float</methodSignature>
+      <fullMethod>getValue(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype\Promotion</package>
+      <className>edfa3ly\Challenge\Prototype\Promotion\Rule</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $whenBuy, int $count)</methodSignature>
+      <fullMethod>__construct(string $whenBuy, int $count)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype\Promotion</package>
+      <className>edfa3ly\Challenge\Prototype\Promotion\Rule</className>
+      <methodName>getWhenBuy</methodName>
+      <methodSignature>getWhenBuy(): string</methodSignature>
+      <fullMethod>getWhenBuy(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Prototype\Promotion</package>
+      <className>edfa3ly\Challenge\Prototype\Promotion\Rule</className>
+      <methodName>getCount</methodName>
+      <methodSignature>getCount(): int</methodSignature>
+      <fullMethod>getCount(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>edfa3ly\Challenge\Tax</package>
+      <className>edfa3ly\Challenge\Tax\VatTax</className>
+      <methodName>getTaxValue</methodName>
+      <methodSignature>getTaxValue(): float</methodSignature>
+      <fullMethod>getTaxValue(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

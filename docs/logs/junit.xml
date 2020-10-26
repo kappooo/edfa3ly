@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.008974">
+    <testsuite name="Combinations" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.008974">
+      <testsuite name="edfa3ly\Challenge\tests\unit\CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.007309">
+        <testcase name="testGetSymoble" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="12" assertions="1" time="0.007309"/>
+      </testsuite>
+      <testsuite name="unit\Products\ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\Products\ProductTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001664">
+        <testcase name="test_map_product" class="unit\Products\ProductTest" classname="unit.Products.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\Products\ProductTest.php" line="13" assertions="1" time="0.001664"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
