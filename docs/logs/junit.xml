@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="22" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="0.035033">
-    <testsuite name="Combinations" tests="22" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="0.035033">
-      <testsuite name="feature\PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.018214">
-        <testcase name="test_products_with_no_discount_in_usd_currency" class="feature\PackageTest" classname="feature.PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" line="21" assertions="1" time="0.011520"/>
-        <testcase name="test_products_with_no_discount_in_egp_currency" class="feature\PackageTest" classname="feature.PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" line="33" assertions="1" time="0.001481"/>
-        <testcase name="test_products_with_discount_in_egp_currency" class="feature\PackageTest" classname="feature.PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" line="46" assertions="1" time="0.003641"/>
-        <testcase name="test_products_with_discount_in_usd_currency" class="feature\PackageTest" classname="feature.PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" line="75" assertions="1" time="0.001572"/>
+  <testsuite name="" tests="22" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="0.034995">
+    <testsuite name="Combinations" tests="22" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="0.034995">
+      <testsuite name="feature\PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.018654">
+        <testcase name="test_products_with_no_discount_in_usd_currency" class="feature\PackageTest" classname="feature.PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" line="21" assertions="1" time="0.011810"/>
+        <testcase name="test_products_with_no_discount_in_egp_currency" class="feature\PackageTest" classname="feature.PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" line="33" assertions="1" time="0.001506"/>
+        <testcase name="test_products_with_discount_in_egp_currency" class="feature\PackageTest" classname="feature.PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" line="46" assertions="1" time="0.003711"/>
+        <testcase name="test_products_with_discount_in_usd_currency" class="feature\PackageTest" classname="feature.PackageTest" file="C:\wamp64\www\Edaf3ly\tests\feature\PackageTest.php" line="75" assertions="1" time="0.001627"/>
       </testsuite>
-      <testsuite name="unit\CartHandlerTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CartHandlerTest.php" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.002037">
-        <testcase name="test_cart_handel_process" class="unit\CartHandlerTest" classname="unit.CartHandlerTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CartHandlerTest.php" line="16" assertions="4" time="0.002037"/>
+      <testsuite name="unit\CartHandlerTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CartHandlerTest.php" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.001996">
+        <testcase name="test_cart_handel_process" class="unit\CartHandlerTest" classname="unit.CartHandlerTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CartHandlerTest.php" line="16" assertions="4" time="0.001996"/>
       </testsuite>
-      <testsuite name="unit\CurrencyHandleTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyHandleTest.php" tests="1" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.000926">
-        <testcase name="test_currency_handler" class="unit\CurrencyHandleTest" classname="unit.CurrencyHandleTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyHandleTest.php" line="16" assertions="3" time="0.000926"/>
+      <testsuite name="unit\CurrencyHandleTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyHandleTest.php" tests="1" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.000945">
+        <testcase name="test_currency_handler" class="unit\CurrencyHandleTest" classname="unit.CurrencyHandleTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyHandleTest.php" line="15" assertions="3" time="0.000945"/>
       </testsuite>
-      <testsuite name="edfa3ly\Challenge\tests\unit\CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" tests="5" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.004237">
-        <testcase name="test_currency_facory" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="15" assertions="2" time="0.001005"/>
-        <testcase name="test_get_right_symbol" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="23" assertions="2" time="0.000682"/>
-        <testcase name="test_format_price_within_currency" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="32" assertions="2" time="0.000695"/>
-        <testcase name="test_get_exchange_rate_per_currency" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="42" assertions="1" time="0.000960"/>
-        <testcase name="test_convert_price_due_to_local_price" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="51" assertions="3" time="0.000896"/>
+      <testsuite name="edfa3ly\Challenge\tests\unit\CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" tests="5" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.003964">
+        <testcase name="test_currency_facory" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="15" assertions="2" time="0.000660"/>
+        <testcase name="test_get_right_symbol" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="23" assertions="2" time="0.000674"/>
+        <testcase name="test_format_price_within_currency" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="32" assertions="2" time="0.000660"/>
+        <testcase name="test_get_exchange_rate_per_currency" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="42" assertions="1" time="0.001024"/>
+        <testcase name="test_convert_price_due_to_local_price" class="edfa3ly\Challenge\tests\unit\CurrencyTest" classname="edfa3ly.Challenge.tests.unit.CurrencyTest" file="C:\wamp64\www\Edaf3ly\tests\unit\CurrencyTest.php" line="51" assertions="3" time="0.000946"/>
       </testsuite>
-      <testsuite name="unit\Products\MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" tests="4" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.003877">
-        <testcase name="test_get_class_from_product_name" class="unit\Products\MapperTest" classname="unit.Products.MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" line="18" assertions="1" time="0.000603"/>
-        <testcase name="test_map_products" class="unit\Products\MapperTest" classname="unit.Products.MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" line="23" assertions="3" time="0.000720"/>
-        <testcase name="test_not_found_product" class="unit\Products\MapperTest" classname="unit.Products.MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" line="33" assertions="1" time="0.001817"/>
-        <testcase name="test_no_porduct_found_in_products_item" class="unit\Products\MapperTest" classname="unit.Products.MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" line="39" assertions="1" time="0.000736"/>
+      <testsuite name="unit\Products\MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" tests="4" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.003776">
+        <testcase name="test_get_class_from_product_name" class="unit\Products\MapperTest" classname="unit.Products.MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" line="18" assertions="1" time="0.000599"/>
+        <testcase name="test_map_products" class="unit\Products\MapperTest" classname="unit.Products.MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" line="23" assertions="3" time="0.000723"/>
+        <testcase name="test_not_found_product" class="unit\Products\MapperTest" classname="unit.Products.MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" line="33" assertions="1" time="0.001719"/>
+        <testcase name="test_no_porduct_found_in_products_item" class="unit\Products\MapperTest" classname="unit.Products.MapperTest" file="C:\wamp64\www\Edaf3ly\tests\unit\MapperTest.php" line="39" assertions="1" time="0.000735"/>
       </testsuite>
-      <testsuite name="unit\OutputTest" file="C:\wamp64\www\Edaf3ly\tests\unit\OutputTest.php" tests="2" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.002251">
-        <testcase name="test_output_when_have_discount" class="unit\OutputTest" classname="unit.OutputTest" file="C:\wamp64\www\Edaf3ly\tests\unit\OutputTest.php" line="14" assertions="2" time="0.001179"/>
-        <testcase name="test_output_when_not_have_discount" class="unit\OutputTest" classname="unit.OutputTest" file="C:\wamp64\www\Edaf3ly\tests\unit\OutputTest.php" line="21" assertions="2" time="0.001072"/>
+      <testsuite name="unit\OutputTest" file="C:\wamp64\www\Edaf3ly\tests\unit\OutputTest.php" tests="2" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.002237">
+        <testcase name="test_output_when_have_discount" class="unit\OutputTest" classname="unit.OutputTest" file="C:\wamp64\www\Edaf3ly\tests\unit\OutputTest.php" line="13" assertions="2" time="0.001205"/>
+        <testcase name="test_output_when_not_have_discount" class="unit\OutputTest" classname="unit.OutputTest" file="C:\wamp64\www\Edaf3ly\tests\unit\OutputTest.php" line="20" assertions="2" time="0.001033"/>
       </testsuite>
-      <testsuite name="unit\ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" tests="5" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.003491">
-        <testcase name="test_get_jacket_price_in_usd" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="15" assertions="1" time="0.000582"/>
-        <testcase name="test_get_product_price_after_discount" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="20" assertions="3" time="0.001015"/>
-        <testcase name="test_get_product_price_after_taxes" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="31" assertions="2" time="0.000671"/>
-        <testcase name="test_get_product_name_and_price" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="40" assertions="2" time="0.000623"/>
-        <testcase name="test_get_price_after_discount_to_product_which_not_have_discount" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="46" assertions="1" time="0.000600"/>
+      <testsuite name="unit\ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" tests="5" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.003423">
+        <testcase name="test_get_jacket_price_in_usd" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="15" assertions="1" time="0.000589"/>
+        <testcase name="test_get_product_price_after_discount" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="20" assertions="3" time="0.000957"/>
+        <testcase name="test_get_product_price_after_taxes" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="31" assertions="2" time="0.000640"/>
+        <testcase name="test_get_product_name_and_price" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="40" assertions="2" time="0.000634"/>
+        <testcase name="test_get_price_after_discount_to_product_which_not_have_discount" class="unit\ProductTest" classname="unit.ProductTest" file="C:\wamp64\www\Edaf3ly\tests\unit\ProductTest.php" line="46" assertions="1" time="0.000602"/>
       </testsuite>
     </testsuite>
   </testsuite>

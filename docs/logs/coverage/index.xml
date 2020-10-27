@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Tue Oct 27 20:21:41 UTC 2020" phpunit="9.4.2" coverage="9.2.0">
+  <build time="Tue Oct 27 21:43:42 UTC 2020" phpunit="9.4.2" coverage="9.2.0">
     <runtime name="PHP" version="7.4.0" url="https://secure.php.net/"/>
     <driver name="xdebug" version="3.0.0beta1"/>
   </build>
@@ -31,7 +31,7 @@
     </tests>
     <directory name="/">
       <totals>
-        <lines total="1004" comments="298" code="706" executable="135" executed="135" percent="100.00"/>
+        <lines total="1005" comments="298" code="707" executable="135" executed="135" percent="100.00"/>
         <methods count="52" tested="52" percent="100.00"/>
         <functions count="0" tested="0" percent="0"/>
         <classes count="16" tested="16" percent="100.00"/>
@@ -300,7 +300,7 @@
       </file>
       <file name="CurrencyHandler.php" href="CurrencyHandler.php.xml">
         <totals>
-          <lines total="45" comments="12" code="33" executable="5" executed="5" percent="100.00"/>
+          <lines total="46" comments="12" code="34" executable="5" executed="5" percent="100.00"/>
           <methods count="3" tested="3" percent="100.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="1" tested="1" percent="100.00"/>

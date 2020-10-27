@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2020-10-27 20:21:41</timestamp>
+  <timestamp>2020-10-27 21:43:41</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>54</methodCount>
@@ -37,8 +37,8 @@
       <package>edfa3ly\Challenge</package>
       <className>edfa3ly\Challenge\CurrencyHandler</className>
       <methodName>__construct</methodName>
-      <methodSignature>__construct(edfa3ly\Challenge\IHandler $handler, edfa3ly\Challenge\Currency\ICurrency $currency)</methodSignature>
-      <fullMethod>__construct(edfa3ly\Challenge\IHandler $handler, edfa3ly\Challenge\Currency\ICurrency $currency)</fullMethod>
+      <methodSignature>__construct(edfa3ly\Challenge\IHandler $handler, string $currency)</methodSignature>
+      <fullMethod>__construct(edfa3ly\Challenge\IHandler $handler, string $currency)</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>

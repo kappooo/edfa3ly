@@ -8,7 +8,6 @@ use edfa3ly\Challenge\Output\CommandLineOutput;
 use edfa3ly\Challenge\Promotions\Promotion;
 use edfa3ly\Challenge\Prototype\Promotion\Rule;
 use edfa3ly\Challenge\Prototype\Promotion\Action;
-use edfa3ly\Challenge\Currency\CurrencyFactory;
 
 
 $data = array_splice($_SERVER['argv'], 3);
@@ -22,5 +21,5 @@ $promotionObject->addRule(new Rule( 'T-shirt',  2));
 $promotionObject->addAction(new Action('Jacket','discount',  50));
 $promotions = [$promotionObject];
 
-print_r((new CommandLineOutput((new CurrencyHandler(new CartHandler($data, $taxes, $promotions), CurrencyFactory::getCurrency($currency)))))->getOutputSentence());
+print_r((new CommandLineOutput((new CurrencyHandler(new CartHandler($data, $taxes, $promotions), $currency))))->getOutputSentence());
 //php index.php createCart --bill-currency=EGP T-shirt T-shirt shoes jacket

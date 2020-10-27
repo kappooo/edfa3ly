@@ -20,7 +20,7 @@ class PackageTest extends TestCase
 {
     public function test_products_with_no_discount_in_usd_currency()
     {
-        $obj = new CommandLineOutput(new CurrencyHandler(new CartHandler(['pants', 'jacket'], [new VatTax()]), new USD()));
+        $obj = new CommandLineOutput(new CurrencyHandler(new CartHandler(['pants', 'jacket'], [new VatTax()]), "USD"));
 
         $pantsPrice = 14.99;
         $jacketPrice = 19.99;
@@ -32,7 +32,7 @@ class PackageTest extends TestCase
 
     public function test_products_with_no_discount_in_egp_currency()
     {
-        $obj = new CommandLineOutput(new CurrencyHandler(new CartHandler(['pants', 'jacket'], [new VatTax()]), new EGP()));
+        $obj = new CommandLineOutput(new CurrencyHandler(new CartHandler(['pants', 'jacket'], [new VatTax()]), "EGP"));
 
         $pantsPrice = 14.99;
         $jacketPrice = 19.99;
@@ -56,7 +56,7 @@ class PackageTest extends TestCase
                     [new VatTax()],
                     [$promotionObject]
                 ),
-                new EGP()
+                "EGP"
             )
         );
 
@@ -85,7 +85,7 @@ class PackageTest extends TestCase
                     [new VatTax()],
                     [$promotionObject]
                 ),
-                new USD()
+               "USD"
             )
         );
 

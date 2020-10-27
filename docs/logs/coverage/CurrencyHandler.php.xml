@@ -2,28 +2,19 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="CurrencyHandler.php" path="\">
     <totals>
-      <lines total="45" comments="12" code="33" executable="5" executed="5" percent="100.00"/>
+      <lines total="46" comments="12" code="34" executable="5" executed="5" percent="100.00"/>
       <methods count="3" tested="3" percent="100.00"/>
       <functions count="0" tested="0" percent="0"/>
       <classes count="1" tested="1" percent="100.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="edfa3ly\Challenge\CurrencyHandler" start="9" executable="5" executed="5" crap="3">
+    <class name="edfa3ly\Challenge\CurrencyHandler" start="10" executable="5" executed="5" crap="3">
       <namespace name="edfa3ly\Challenge"/>
-      <method name="__construct" signature="__construct(edfa3ly\Challenge\IHandler $handler, edfa3ly\Challenge\Currency\ICurrency $currency)" start="23" end="27" crap="1" executable="3" executed="3" coverage="100"/>
-      <method name="convertCurrencyExchange" signature="convertCurrencyExchange(): edfa3ly\Challenge\Prototype\CartReturn" start="32" end="35" crap="1" executable="1" executed="1" coverage="100"/>
-      <method name="getCurrency" signature="getCurrency(): edfa3ly\Challenge\Currency\ICurrency" start="40" end="43" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="__construct" signature="__construct(edfa3ly\Challenge\IHandler $handler, string $currency)" start="24" end="28" crap="1" executable="3" executed="3" coverage="100"/>
+      <method name="convertCurrencyExchange" signature="convertCurrencyExchange(): edfa3ly\Challenge\Prototype\CartReturn" start="33" end="36" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getCurrency" signature="getCurrency(): edfa3ly\Challenge\Currency\ICurrency" start="41" end="44" crap="1" executable="1" executed="1" coverage="100"/>
     </class>
     <coverage>
-      <line nr="25">
-        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
-        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
-        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
-        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
-        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
-        <covered by="unit\OutputTest::test_output_when_have_discount"/>
-        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
-      </line>
       <line nr="26">
         <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
         <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
@@ -42,7 +33,7 @@
         <covered by="unit\OutputTest::test_output_when_have_discount"/>
         <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
-      <line nr="34">
+      <line nr="28">
         <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
         <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
         <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
@@ -51,7 +42,16 @@
         <covered by="unit\OutputTest::test_output_when_have_discount"/>
         <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
-      <line nr="42">
+      <line nr="35">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="43">
         <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
         <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
         <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
@@ -85,10 +85,22 @@
         <token name="T_NS_SEPARATOR">\</token>
         <token name="T_STRING">Currency</token>
         <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">ICurrency</token>
+        <token name="T_STRING">CurrencyFactory</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="7">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">edfa3ly</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Challenge</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Currency</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">ICurrency</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="8">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">edfa3ly</token>
@@ -100,26 +112,26 @@
         <token name="T_STRING">CartReturn</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="8"/>
-      <line no="9">
+      <line no="9"/>
+      <line no="10">
         <token name="T_CLASS">class</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">CurrencyHandler</token>
       </line>
-      <line no="10">
+      <line no="11">
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="11">
+      <line no="12">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="12">
+      <line no="13">
         <token name="T_DOC_COMMENT">     * @var IHandler $handler</token>
       </line>
-      <line no="13">
+      <line no="14">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="14">
+      <line no="15">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PRIVATE">private</token>
         <token name="T_WHITESPACE"> </token>
@@ -128,19 +140,19 @@
         <token name="T_VARIABLE">$handler</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="15"/>
       <line no="16"/>
-      <line no="17">
+      <line no="17"/>
+      <line no="18">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="18">
+      <line no="19">
         <token name="T_DOC_COMMENT">     * @var ICurrency $currency</token>
       </line>
-      <line no="19">
+      <line no="20">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="20">
+      <line no="21">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PRIVATE">private</token>
         <token name="T_WHITESPACE"> </token>
@@ -149,9 +161,9 @@
         <token name="T_VARIABLE">$currency</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="21"/>
       <line no="22"/>
-      <line no="23">
+      <line no="23"/>
+      <line no="24">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -164,16 +176,20 @@
         <token name="T_VARIABLE">$handler</token>
         <token name="T_COMMA">,</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">ICurrency</token>
+        <token name="T_STRING">string</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_VARIABLE">$currency</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">"USD"</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="24">
+      <line no="25">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="25">
+      <line no="26">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$this</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -184,7 +200,7 @@
         <token name="T_VARIABLE">$handler</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="26">
+      <line no="27">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$this</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -192,25 +208,30 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_EQUAL">=</token>
         <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">CurrencyFactory</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">getCurrency</token>
+        <token name="T_OPEN_BRACKET">(</token>
         <token name="T_VARIABLE">$currency</token>
+        <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="27">
+      <line no="28">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="28"/>
-      <line no="29">
+      <line no="29"/>
+      <line no="30">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="30">
+      <line no="31">
         <token name="T_DOC_COMMENT">     * @return CartReturn</token>
       </line>
-      <line no="31">
+      <line no="32">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="32">
+      <line no="33">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -224,11 +245,11 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">CartReturn</token>
       </line>
-      <line no="33">
+      <line no="34">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="34">
+      <line no="35">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -248,22 +269,22 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="35">
+      <line no="36">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="36"/>
-      <line no="37">
+      <line no="37"/>
+      <line no="38">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="38">
+      <line no="39">
         <token name="T_DOC_COMMENT">     * @return ICurrency</token>
       </line>
-      <line no="39">
+      <line no="40">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="40">
+      <line no="41">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -277,11 +298,11 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">ICurrency</token>
       </line>
-      <line no="41">
+      <line no="42">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="42">
+      <line no="43">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -290,15 +311,15 @@
         <token name="T_STRING">currency</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="43">
+      <line no="44">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="44"/>
-      <line no="45">
+      <line no="45"/>
+      <line no="46">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="46"/>
+      <line no="47"/>
     </source>
   </file>
 </phpunit>

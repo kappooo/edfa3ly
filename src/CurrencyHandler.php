@@ -3,6 +3,7 @@
 
 namespace edfa3ly\Challenge;
 
+use edfa3ly\Challenge\Currency\CurrencyFactory;
 use edfa3ly\Challenge\Currency\ICurrency;
 use edfa3ly\Challenge\Prototype\CartReturn;
 
@@ -20,10 +21,10 @@ class CurrencyHandler
     private ICurrency $currency;
 
 
-    public function __construct(IHandler $handler, ICurrency $currency)
+    public function __construct(IHandler $handler, string $currency = "USD")
     {
         $this->handler = $handler;
-        $this->currency = $currency;
+        $this->currency = CurrencyFactory::getCurrency($currency);
     }
 
     /**

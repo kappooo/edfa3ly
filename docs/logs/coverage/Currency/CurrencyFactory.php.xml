@@ -14,10 +14,24 @@
     </class>
     <coverage>
       <line nr="18">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
         <covered by="edfa3ly\Challenge\tests\unit\CurrencyTest::test_currency_facory"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
       <line nr="19">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
         <covered by="edfa3ly\Challenge\tests\unit\CurrencyTest::test_currency_facory"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
     </coverage>
     <source>
