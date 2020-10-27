@@ -78,7 +78,7 @@ class CartReturn
      */
     public function getTotalPrice() : float
     {
-        return ($this->getSubTotalPrice() - ($this->getTotalTaxes() - $this->getTotalDiscount()));
+        return ($this->getSubTotalPrice() + ($this->getTotalTaxes() - $this->getTotalDiscount()));
     }
 
 

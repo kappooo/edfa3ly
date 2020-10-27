@@ -82,8 +82,6 @@ class Promotion
             case 'discount':
                 $product->setDiscountPercentageValue($this->action->getValue());
                 break;
-            default :
-
         }
     }
 

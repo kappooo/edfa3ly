@@ -11,11 +11,9 @@ use edfa3ly\Challenge\Prototype\Promotion\Action;
 use edfa3ly\Challenge\Currency\CurrencyFactory;
 
 
-$data  = ['T-shirt'];
-//$data = array_splice($_SERVER['argv'], 3);
+$data = array_splice($_SERVER['argv'], 3);
 
-$currency = 'EGP';
-//$currency = substr($_SERVER['argv'][2], strpos( $_SERVER['argv'][2], '=') + 1);
+$currency = substr($_SERVER['argv'][2], strpos( $_SERVER['argv'][2], '=') + 1);
 
 $taxes = [new VatTax()];
 
@@ -25,3 +23,4 @@ $promotionObject->addAction(new Action('Jacket','discount',  50));
 $promotions = [$promotionObject];
 
 print_r((new CommandLineOutput((new CurrencyHandler(new CartHandler($data, $taxes, $promotions), CurrencyFactory::getCurrency($currency)))))->getOutputSentence());
+//php index.php createCart --bill-currency=EGP T-shirt T-shirt shoes jacket

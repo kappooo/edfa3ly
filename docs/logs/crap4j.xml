@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2020-10-26 23:11:19</timestamp>
+  <timestamp>2020-10-27 20:21:41</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>54</methodCount>
-    <crapMethodCount>1</crapMethodCount>
-    <crapLoad>5</crapLoad>
-    <totalCrap>163</totalCrap>
-    <crapMethodPercent>1.85</crapMethodPercent>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>66</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
     <method>
@@ -17,9 +17,9 @@
       <methodName>__construct</methodName>
       <methodSignature>__construct(array $products, $taxes, $promotions)</methodSignature>
       <fullMethod>__construct(array $products, $taxes, $promotions)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -28,10 +28,10 @@
       <methodName>handel</methodName>
       <methodSignature>handel(): edfa3ly\Challenge\Prototype\CartReturn</methodSignature>
       <fullMethod>handel(): edfa3ly\Challenge\Prototype\CartReturn</fullMethod>
-      <crap>30</crap>
+      <crap>5</crap>
       <complexity>5</complexity>
-      <coverage>0</coverage>
-      <crapLoad>5</crapLoad>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>edfa3ly\Challenge</package>
@@ -39,9 +39,9 @@
       <methodName>__construct</methodName>
       <methodSignature>__construct(edfa3ly\Challenge\IHandler $handler, edfa3ly\Challenge\Currency\ICurrency $currency)</methodSignature>
       <fullMethod>__construct(edfa3ly\Challenge\IHandler $handler, edfa3ly\Challenge\Currency\ICurrency $currency)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -50,9 +50,9 @@
       <methodName>convertCurrencyExchange</methodName>
       <methodSignature>convertCurrencyExchange(): edfa3ly\Challenge\Prototype\CartReturn</methodSignature>
       <fullMethod>convertCurrencyExchange(): edfa3ly\Challenge\Prototype\CartReturn</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -61,9 +61,9 @@
       <methodName>getCurrency</methodName>
       <methodSignature>getCurrency(): edfa3ly\Challenge\Currency\ICurrency</methodSignature>
       <fullMethod>getCurrency(): edfa3ly\Challenge\Currency\ICurrency</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -204,9 +204,9 @@
       <methodName>__construct</methodName>
       <methodSignature>__construct(edfa3ly\Challenge\CurrencyHandler $currencyHandler)</methodSignature>
       <fullMethod>__construct(edfa3ly\Challenge\CurrencyHandler $currencyHandler)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -215,9 +215,9 @@
       <methodName>getOutputSentence</methodName>
       <methodSignature>getOutputSentence(): string</methodSignature>
       <fullMethod>getOutputSentence(): string</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -226,9 +226,9 @@
       <methodName>getDiscountString</methodName>
       <methodSignature>getDiscountString(array $discountItems, edfa3ly\Challenge\Currency\ICurrency $currency): string</methodSignature>
       <fullMethod>getDiscountString(array $discountItems, edfa3ly\Challenge\Currency\ICurrency $currency): string</fullMethod>
-      <crap>12</crap>
+      <crap>3</crap>
       <complexity>3</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -237,9 +237,9 @@
       <methodName>getPriceInUsd</methodName>
       <methodSignature>getPriceInUsd(): float</methodSignature>
       <fullMethod>getPriceInUsd(): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -248,9 +248,9 @@
       <methodName>setDiscountPercentageValue</methodName>
       <methodSignature>setDiscountPercentageValue(float $discountValue): void</methodSignature>
       <fullMethod>setDiscountPercentageValue(float $discountValue): void</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -259,9 +259,9 @@
       <methodName>getDiscountPercentageValue</methodName>
       <methodSignature>getDiscountPercentageValue(): float</methodSignature>
       <fullMethod>getDiscountPercentageValue(): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -270,9 +270,9 @@
       <methodName>getPriceAfterDiscount</methodName>
       <methodSignature>getPriceAfterDiscount(): float</methodSignature>
       <fullMethod>getPriceAfterDiscount(): float</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -281,9 +281,9 @@
       <methodName>getDiscountValue</methodName>
       <methodSignature>getDiscountValue(): float</methodSignature>
       <fullMethod>getDiscountValue(): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -292,9 +292,9 @@
       <methodName>getPriceAfterTax</methodName>
       <methodSignature>getPriceAfterTax(edfa3ly\Challenge\Tax\ITax $tax): float</methodSignature>
       <fullMethod>getPriceAfterTax(edfa3ly\Challenge\Tax\ITax $tax): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -303,9 +303,9 @@
       <methodName>getTaxValue</methodName>
       <methodSignature>getTaxValue(edfa3ly\Challenge\Tax\ITax $tax): float</methodSignature>
       <fullMethod>getTaxValue(edfa3ly\Challenge\Tax\ITax $tax): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -314,9 +314,9 @@
       <methodName>getName</methodName>
       <methodSignature>getName(): string</methodSignature>
       <fullMethod>getName(): string</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -325,9 +325,9 @@
       <methodName>addRule</methodName>
       <methodSignature>addRule(edfa3ly\Challenge\Prototype\Promotion\Rule $rule): void</methodSignature>
       <fullMethod>addRule(edfa3ly\Challenge\Prototype\Promotion\Rule $rule): void</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -336,9 +336,9 @@
       <methodName>addAction</methodName>
       <methodSignature>addAction(edfa3ly\Challenge\Prototype\Promotion\Action $action): void</methodSignature>
       <fullMethod>addAction(edfa3ly\Challenge\Prototype\Promotion\Action $action): void</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -347,9 +347,9 @@
       <methodName>isItemEligibleForPromotion</methodName>
       <methodSignature>isItemEligibleForPromotion(edfa3ly\Challenge\Products\Product $product, array $items): bool</methodSignature>
       <fullMethod>isItemEligibleForPromotion(edfa3ly\Challenge\Products\Product $product, array $items): bool</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -358,9 +358,9 @@
       <methodName>applyPromotionIfEligible</methodName>
       <methodSignature>applyPromotionIfEligible(edfa3ly\Challenge\Products\Product $product, array $items): void</methodSignature>
       <fullMethod>applyPromotionIfEligible(edfa3ly\Challenge\Products\Product $product, array $items): void</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -369,9 +369,9 @@
       <methodName>applyAction</methodName>
       <methodSignature>applyAction(edfa3ly\Challenge\Products\Product $product): void</methodSignature>
       <fullMethod>applyAction(edfa3ly\Challenge\Products\Product $product): void</fullMethod>
-      <crap>12</crap>
-      <complexity>3</complexity>
-      <coverage>0</coverage>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -424,9 +424,9 @@
       <methodName>getDiscountItems</methodName>
       <methodSignature>getDiscountItems(): array</methodSignature>
       <fullMethod>getDiscountItems(): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -435,9 +435,9 @@
       <methodName>getTotalPrice</methodName>
       <methodSignature>getTotalPrice(): float</methodSignature>
       <fullMethod>getTotalPrice(): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -479,9 +479,9 @@
       <methodName>__construct</methodName>
       <methodSignature>__construct(float $discountPercentage, string $itemName, float $discountValue)</methodSignature>
       <fullMethod>__construct(float $discountPercentage, string $itemName, float $discountValue)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -490,9 +490,9 @@
       <methodName>getDiscountPercentage</methodName>
       <methodSignature>getDiscountPercentage(): float</methodSignature>
       <fullMethod>getDiscountPercentage(): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -501,9 +501,9 @@
       <methodName>getItemName</methodName>
       <methodSignature>getItemName(): string</methodSignature>
       <fullMethod>getItemName(): string</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -512,9 +512,9 @@
       <methodName>getDiscountValue</methodName>
       <methodSignature>getDiscountValue(): float</methodSignature>
       <fullMethod>getDiscountValue(): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -523,9 +523,9 @@
       <methodName>__construct</methodName>
       <methodSignature>__construct(string $applyOn, string $type, float $value)</methodSignature>
       <fullMethod>__construct(string $applyOn, string $type, float $value)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -534,9 +534,9 @@
       <methodName>getApplyOn</methodName>
       <methodSignature>getApplyOn(): string</methodSignature>
       <fullMethod>getApplyOn(): string</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -545,9 +545,9 @@
       <methodName>getType</methodName>
       <methodSignature>getType(): string</methodSignature>
       <fullMethod>getType(): string</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -556,9 +556,9 @@
       <methodName>getValue</methodName>
       <methodSignature>getValue(): float</methodSignature>
       <fullMethod>getValue(): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -567,9 +567,9 @@
       <methodName>__construct</methodName>
       <methodSignature>__construct(string $whenBuy, int $count)</methodSignature>
       <fullMethod>__construct(string $whenBuy, int $count)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -578,9 +578,9 @@
       <methodName>getWhenBuy</methodName>
       <methodSignature>getWhenBuy(): string</methodSignature>
       <fullMethod>getWhenBuy(): string</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -589,9 +589,9 @@
       <methodName>getCount</methodName>
       <methodSignature>getCount(): int</methodSignature>
       <fullMethod>getCount(): int</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -600,9 +600,9 @@
       <methodName>getTaxValue</methodName>
       <methodSignature>getTaxValue(): float</methodSignature>
       <fullMethod>getTaxValue(): float</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
   </methods>

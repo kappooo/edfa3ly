@@ -15,8 +15,8 @@ class Mapper
     ];
 
     /**
-     * @param array $data
-     * @return array
+     * @param array<string> $data
+     * @return array<Product>
      */
     public static function mapProducts(array $data): array
     {

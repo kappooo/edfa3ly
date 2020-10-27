@@ -2,17 +2,208 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="CartHandler.php" path="\">
     <totals>
-      <lines total="77" comments="18" code="59" executable="20" executed="0" percent="0.00"/>
-      <methods count="2" tested="0" percent="0.00"/>
+      <lines total="77" comments="18" code="59" executable="20" executed="20" percent="100.00"/>
+      <methods count="2" tested="2" percent="100.00"/>
       <functions count="0" tested="0" percent="0"/>
-      <classes count="1" tested="0" percent="0.00"/>
+      <classes count="1" tested="1" percent="100.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="edfa3ly\Challenge\CartHandler" start="12" executable="20" executed="0" crap="42">
+    <class name="edfa3ly\Challenge\CartHandler" start="12" executable="20" executed="20" crap="6">
       <namespace name="edfa3ly\Challenge"/>
-      <method name="__construct" signature="__construct(array $products, $taxes, $promotions)" start="36" end="41" crap="2" executable="4" executed="0" coverage="0"/>
-      <method name="handel" signature="handel(): edfa3ly\Challenge\Prototype\CartReturn" start="46" end="75" crap="30" executable="16" executed="0" coverage="0"/>
+      <method name="__construct" signature="__construct(array $products, $taxes, $promotions)" start="36" end="41" crap="1" executable="4" executed="4" coverage="100"/>
+      <method name="handel" signature="handel(): edfa3ly\Challenge\Prototype\CartReturn" start="46" end="75" crap="5" executable="16" executed="16" coverage="100"/>
     </class>
+    <coverage>
+      <line nr="38">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="39">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="40">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="41">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="48">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="49">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="50">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="51">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="52">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="53">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="55">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="57">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="58">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="61">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="63">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="64">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+      </line>
+      <line nr="67">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="68">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="71">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+      <line nr="74">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
+      </line>
+    </coverage>
     <source>
       <line no="1">
         <token name="T_OPEN_TAG">&lt;?php</token>

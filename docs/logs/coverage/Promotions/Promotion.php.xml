@@ -2,20 +2,132 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="Promotion.php" path="\Promotions">
     <totals>
-      <lines total="90" comments="24" code="66" executable="23" executed="0" percent="0.00"/>
-      <methods count="5" tested="0" percent="0.00"/>
+      <lines total="88" comments="24" code="64" executable="22" executed="22" percent="100.00"/>
+      <methods count="5" tested="5" percent="100.00"/>
       <functions count="0" tested="0" percent="0"/>
-      <classes count="1" tested="0" percent="0.00"/>
+      <classes count="1" tested="1" percent="100.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="edfa3ly\Challenge\Promotions\Promotion" start="11" executable="23" executed="0" crap="132">
+    <class name="edfa3ly\Challenge\Promotions\Promotion" start="11" executable="22" executed="22" crap="10">
       <namespace name="edfa3ly\Challenge\Promotions"/>
-      <method name="addRule" signature="addRule(edfa3ly\Challenge\Prototype\Promotion\Rule $rule): void" start="28" end="31" crap="2" executable="2" executed="0" coverage="0"/>
-      <method name="addAction" signature="addAction(edfa3ly\Challenge\Prototype\Promotion\Action $action): void" start="36" end="39" crap="2" executable="2" executed="0" coverage="0"/>
-      <method name="isItemEligibleForPromotion" signature="isItemEligibleForPromotion(edfa3ly\Challenge\Products\Product $product, array $items): bool" start="46" end="62" crap="20" executable="10" executed="0" coverage="0"/>
-      <method name="applyPromotionIfEligible" signature="applyPromotionIfEligible(edfa3ly\Challenge\Products\Product $product, array $items): void" start="69" end="74" crap="6" executable="3" executed="0" coverage="0"/>
-      <method name="applyAction" signature="applyAction(edfa3ly\Challenge\Products\Product $product): void" start="79" end="88" crap="12" executable="6" executed="0" coverage="0"/>
+      <method name="addRule" signature="addRule(edfa3ly\Challenge\Prototype\Promotion\Rule $rule): void" start="28" end="31" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="addAction" signature="addAction(edfa3ly\Challenge\Prototype\Promotion\Action $action): void" start="36" end="39" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="isItemEligibleForPromotion" signature="isItemEligibleForPromotion(edfa3ly\Challenge\Products\Product $product, array $items): bool" start="46" end="62" crap="4" executable="10" executed="10" coverage="100"/>
+      <method name="applyPromotionIfEligible" signature="applyPromotionIfEligible(edfa3ly\Challenge\Products\Product $product, array $items): void" start="69" end="74" crap="2" executable="3" executed="3" coverage="100"/>
+      <method name="applyAction" signature="applyAction(edfa3ly\Challenge\Products\Product $product): void" start="79" end="86" crap="2" executable="5" executed="5" coverage="100"/>
     </class>
+    <coverage>
+      <line nr="30">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="31">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="38">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="39">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="48">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="49">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="50">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="51">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="52">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="54">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="56">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="57">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="59">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="61">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="71">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="72">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="74">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="81">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="82">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="83">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="84">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="86">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+    </coverage>
     <source>
       <line no="1">
         <token name="T_OPEN_TAG">&lt;?php</token>
@@ -589,25 +701,18 @@
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="85">
-        <token name="T_WHITESPACE">            </token>
-        <token name="T_DEFAULT">default</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_COLON">:</token>
-      </line>
-      <line no="86"/>
-      <line no="87">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="88">
+      <line no="86">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="89"/>
-      <line no="90">
+      <line no="87"/>
+      <line no="88">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="91"/>
+      <line no="89"/>
     </source>
   </file>
 </phpunit>

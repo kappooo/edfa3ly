@@ -2,19 +2,56 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="Action.php" path="\Prototype\Promotion">
     <totals>
-      <lines total="64" comments="24" code="40" executable="7" executed="0" percent="0.00"/>
-      <methods count="4" tested="0" percent="0.00"/>
+      <lines total="64" comments="24" code="40" executable="7" executed="7" percent="100.00"/>
+      <methods count="4" tested="4" percent="100.00"/>
       <functions count="0" tested="0" percent="0"/>
-      <classes count="1" tested="0" percent="0.00"/>
+      <classes count="1" tested="1" percent="100.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="edfa3ly\Challenge\Prototype\Promotion\Action" start="7" executable="7" executed="0" crap="20">
+    <class name="edfa3ly\Challenge\Prototype\Promotion\Action" start="7" executable="7" executed="7" crap="4">
       <namespace name="edfa3ly\Challenge\Prototype\Promotion"/>
-      <method name="__construct" signature="__construct(string $applyOn, string $type, float $value)" start="34" end="39" crap="2" executable="4" executed="0" coverage="0"/>
-      <method name="getApplyOn" signature="getApplyOn(): string" start="44" end="47" crap="2" executable="1" executed="0" coverage="0"/>
-      <method name="getType" signature="getType(): string" start="52" end="55" crap="2" executable="1" executed="0" coverage="0"/>
-      <method name="getValue" signature="getValue(): float" start="60" end="63" crap="2" executable="1" executed="0" coverage="0"/>
+      <method name="__construct" signature="__construct(string $applyOn, string $type, float $value)" start="34" end="39" crap="1" executable="4" executed="4" coverage="100"/>
+      <method name="getApplyOn" signature="getApplyOn(): string" start="44" end="47" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getType" signature="getType(): string" start="52" end="55" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getValue" signature="getValue(): float" start="60" end="63" crap="1" executable="1" executed="1" coverage="100"/>
     </class>
+    <coverage>
+      <line nr="36">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="37">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="38">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="39">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="46">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="54">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+      <line nr="62">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+      </line>
+    </coverage>
     <source>
       <line no="1">
         <token name="T_OPEN_TAG">&lt;?php</token>

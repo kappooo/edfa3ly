@@ -15,29 +15,72 @@
     </class>
     <coverage>
       <line nr="23">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
         <covered by="unit\Products\MapperTest::test_map_products"/>
         <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
       <line nr="24">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
         <covered by="unit\Products\MapperTest::test_map_products"/>
         <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
       <line nr="25">
         <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
       </line>
       <line nr="27">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
         <covered by="unit\Products\MapperTest::test_map_products"/>
         <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
       <line nr="28">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
         <covered by="unit\Products\MapperTest::test_map_products"/>
         <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
       <line nr="29">
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_usd_currency"/>
+        <covered by="feature\PackageTest::test_products_with_no_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
+        <covered by="unit\CurrencyHandleTest::test_currency_handler"/>
         <covered by="unit\Products\MapperTest::test_map_products"/>
         <covered by="unit\Products\MapperTest::test_no_porduct_found_in_products_item"/>
+        <covered by="unit\OutputTest::test_output_when_have_discount"/>
+        <covered by="unit\OutputTest::test_output_when_not_have_discount"/>
       </line>
       <line nr="39">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
         <covered by="unit\Products\MapperTest::test_get_class_from_product_name"/>
         <covered by="unit\Products\MapperTest::test_not_found_product"/>
       </line>
@@ -45,9 +88,15 @@
         <covered by="unit\Products\MapperTest::test_not_found_product"/>
       </line>
       <line nr="42">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
         <covered by="unit\Products\MapperTest::test_get_class_from_product_name"/>
       </line>
       <line nr="43">
+        <covered by="feature\PackageTest::test_products_with_discount_in_egp_currency"/>
+        <covered by="feature\PackageTest::test_products_with_discount_in_usd_currency"/>
+        <covered by="unit\CartHandlerTest::test_cart_handel_process"/>
         <covered by="unit\Products\MapperTest::test_get_class_from_product_name"/>
       </line>
     </coverage>
@@ -177,10 +226,10 @@
         <token name="T_DOC_COMMENT">/**</token>
       </line>
       <line no="18">
-        <token name="T_DOC_COMMENT">     * @param array $data</token>
+        <token name="T_DOC_COMMENT">     * @param array&lt;string&gt; $data</token>
       </line>
       <line no="19">
-        <token name="T_DOC_COMMENT">     * @return array</token>
+        <token name="T_DOC_COMMENT">     * @return array&lt;Product&gt;</token>
       </line>
       <line no="20">
         <token name="T_DOC_COMMENT">     */</token>
